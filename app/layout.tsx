@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { Inter, Pacifico } from 'next/font/google'
+import { Inter, Pacifico, Poppins, Raleway } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/Navbar'
 
