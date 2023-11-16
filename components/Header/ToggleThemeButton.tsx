@@ -35,7 +35,7 @@ const ToggleThemeButton = () => {
   
     return (
       <button
-        className={`w-14 h-14 flex items-center justify-center rounded-full relative shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] ${
+        className={`w-14 h-14 max-xxsm:w-12 max-xxsm:h-12 flex items-center justify-center rounded-full relative shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] ${
           bg ? 'bg-[#fbffc286]' : 'bg-[#EBF2FA]'
         }`}
         onClick={changeTheme}
