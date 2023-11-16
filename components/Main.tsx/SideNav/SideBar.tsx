@@ -4,8 +4,8 @@ import SideBarDetails from './SideBarDetails'
 
 const SideBar = () => {
   return (
-    <section>
-        <div className='w-[150px] h-[150px] flex justify-center items-center mx-auto  rounded-full overflow-hidden bg-[#FF9C1A]'>
+    <section className=''>
+        <div className='relative z-10 w-[150px] h-[150px] flex justify-center items-center mx-auto  rounded-full overflow-hidden bg-[#FF9C1A]'>
         <Image
         src="/shades.png"
         alt="avatar"

@@ -28,6 +28,10 @@ html, body {
   .div-center{
     @apply flex items-center justify-center
   }
+
+  .cta{
+    @apply text-white font-semibold w-[200px] h-[50px] rounded-[30px] text-sm btn div-center gap-2
+  }
 }
 
 .bg-testgradient{
@@ -44,13 +48,22 @@ html, body {
 
 }
 
-.logo{
-  font-family: var(--font-pacifico);
+
+
+
+.btn {
+
+  background: linear-gradient(to right, #FF9C1A 0%, #ED250A 48%, #FF9C1A 100%);
+  background-size: 200% auto;
+  transition: background 400ms ease-out;
+
 }
 
-.heading{
-  font-family: var(--font-poppins);
+.btn:hover {
+
+  background-position: right center;
 }
+
 
 /* keyframes */
 
