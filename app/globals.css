@@ -8,7 +8,23 @@
 }
 
 @layer components {
-  
+  .bg-btngradient{
+    @apply bg-gradient-to-r from-[#aaffa9]  to-[#11ffbd];
+  }
+}
+
+.bg-testgradient{
+
+  background: linear-gradient(to right, #e74c3c, #f39c12);
+
+  /* background: linear-gradient(to right, #2ecc71, #3498db); */
+  /* background: linear-gradient(to right, #2ecc71, #27ae60); */
+
+  /* background: linear-gradient(to right, #1abc9c, #16a085); */
+
+
+
+
 }
 
 .logo{
@@ -17,6 +33,23 @@
 
 .heading{
   font-family: var(--font-poppins);
+}
+
+@keyframes changeTheme{
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: rotate(180deg);
+  }
+  100%{
+    transform: translateY(28px);
+    opacity: 0;
+  }
+}
+
+.changeThemeBtn{
+  animation: changeTheme 4s ease-in-out;
 }
 
 @media (prefers-color-scheme: dark) {

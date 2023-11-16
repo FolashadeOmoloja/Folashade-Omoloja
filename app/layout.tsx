@@ -31,9 +31,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={raleway.className}>
-        <Header/>
-        {children}
+      <body className={`${raleway.className} px-[100px]`}>
+           <Header/>
+           {children}
         </body>
     </html>
   )
