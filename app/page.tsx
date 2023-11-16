@@ -1,8 +1,11 @@
+import MainBody from "@/components/Main.tsx/MainBody"
 
 
 const page = () => {
   return (
-    <div>page</div>
+    <>
+    <MainBody/>
+    </>
   )
 }
 
