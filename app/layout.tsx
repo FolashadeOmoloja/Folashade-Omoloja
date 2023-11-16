@@ -1,13 +1,21 @@
 import type { Metadata } from 'next'
 import { Pacifico, Poppins, Raleway } from 'next/font/google'
 import './globals.css'
-import Navbar from '@/components/Navbar'
+import Header from '@/components/Header/Header'
 
 
 const raleway = Raleway({ subsets: ['latin'] })
 const pacifico = Pacifico({
   subsets: ['latin'],
   weight:['400'],
+  variable: '--font-pacifico'
+  
+})
+
+const poppins= Poppins({
+  subsets: ['latin'],
+  weight:['400'],
+  variable: '--font-poppins'
   
 })
 
@@ -24,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={raleway.className}>
-        <Navbar/>
+        <Header/>
         {children}
         </body>
     </html>
