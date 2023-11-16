@@ -9,7 +9,11 @@
 
 @layer components {
   .bg-btngradient{
-    @apply bg-gradient-to-r from-[#aaffa9]  to-[#11ffbd];
+    @apply bg-gradient-to-r from-[#FF9C1A]  to-[#ED250A];
+  }
+
+  .bg-text{
+    @apply bg-btngradient text-transparent bg-clip-text
   }
 }
 
@@ -35,22 +39,49 @@
   font-family: var(--font-poppins);
 }
 
+/* keyframes */
+
 @keyframes changeTheme{
   0%{
     transform: translateY(0);
   }
-  50%{
+  25%{
     transform: rotate(180deg);
   }
+  50%{
+    transform: translateY(15px);
+  }
   100%{
-    transform: translateY(28px);
+ 
     opacity: 0;
   }
 }
 
 .changeThemeBtn{
-  animation: changeTheme 4s ease-in-out;
+  animation: changeTheme 2s ease-in-out;
 }
+
+
+@keyframes changeDarkTheme{
+  0%{
+    transform: translateY(0);
+  }
+  25%{
+    transform: rotate(360deg);
+  }
+  50%{
+    transform: translateY(-15px);
+  }
+  100%{
+ 
+    opacity: 0;
+  }
+}
+
+.changeDarkThemeBtn{
+  animation: changeDarkTheme 2s ease-in-out;
+}
+
 
 @media (prefers-color-scheme: dark) {
   :root {
