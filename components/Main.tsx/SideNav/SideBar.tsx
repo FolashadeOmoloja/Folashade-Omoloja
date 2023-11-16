@@ -1,10 +1,11 @@
 import React from 'react'
 import Image from 'next/image'
+import SideBarDetails from './SideBarDetails'
 
 const SideBar = () => {
   return (
     <section>
-        <div className='w-[150px] h-[150px] flex justify-center items-center mx-auto  rounded-[20px] overflow-hidden bg-[#FF9C1A]'>
+        <div className='w-[150px] h-[150px] flex justify-center items-center mx-auto  rounded-full overflow-hidden bg-[#FF9C1A]'>
         <Image
         src="/shades.png"
         alt="avatar"
@@ -14,6 +15,7 @@ const SideBar = () => {
         quality="100"
       />
         </div>
+         <SideBarDetails/>
     </section>
   )
 }

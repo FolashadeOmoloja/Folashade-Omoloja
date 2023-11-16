@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+html, body {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+
 :root {
   --font-poppins: ${poppinsFont.css()};
   --font-pacifico: ${ralewayFont.css()};
@@ -14,6 +23,10 @@
 
   .bg-text{
     @apply bg-btngradient text-transparent bg-clip-text
+  }
+
+  .div-center{
+    @apply flex items-center justify-center
   }
 }
 

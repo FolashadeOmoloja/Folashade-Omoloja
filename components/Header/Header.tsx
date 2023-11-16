@@ -9,8 +9,8 @@ const pacifico = Pacifico({
 })
 const Header = () => {
   return (
-    <header className='flex items-center justify-between mt-4'>
-      <div className={`${pacifico.className} text-[24px] max-xxsm:text-[20px] my-3 h-[82px] flex items-center`}>
+    <header className='flex items-center justify-between my-4'>
+      <div className={`${pacifico.className} text-[24px] max-xxsm:text-[20px] my-3 h-[50px] flex items-center`}>
          <span>Folashade <span className='bg-text'>Omoloja</span></span> 
       </div>
     <ToggleThemeButton/>
