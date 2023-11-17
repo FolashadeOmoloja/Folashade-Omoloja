@@ -46,7 +46,7 @@ const NavBar = () => {
             {
                 navItem.map((item, idx)=>{
                     return(
-                        <li key={idx} className={`bg-[#E1E8EF] w-[80px] h-[80px] max-sm:w-[60px] max-sm:h-[60px] max-xsm:h-[50px] max-xsm:w-[50px] max-sm:rounded-[10px] max-xsm:rounded-[4px] rounded-[20px] flex-col gap-1 div-center nav-item ${idx === active?'nav-active': ''}`} 
+                        <li key={idx} className={`nav-class nav-item ${idx === active?'nav-active': ''}`} 
                         onClick={() => handleClick(idx)}
                         >
                           <span className="text-[24px] text-[#1A1003] nav-icon max-md:text-lg max-xsm:text-base">{item.icon}</span>

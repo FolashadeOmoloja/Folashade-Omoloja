@@ -28,6 +28,10 @@ html, body {
   .cta{
     @apply text-white font-semibold w-[200px] h-[50px] rounded-[30px] text-sm btn div-center gap-2
   }
+
+  .nav-class{
+    @apply bg-[#E1E8EF] w-[80px] h-[80px] max-sm:w-[60px] max-sm:h-[60px] max-xsm:h-[50px] max-xsm:w-[50px] max-sm:rounded-[10px] max-xsm:rounded-[4px] rounded-[20px] flex-col gap-1 div-center
+  }
 }
 
 
