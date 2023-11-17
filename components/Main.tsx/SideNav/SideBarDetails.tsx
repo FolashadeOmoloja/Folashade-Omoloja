@@ -21,21 +21,22 @@ const socialIcons = [
 ]
 
 const contactInfo = [
-    {
-        src: 'Email.svg',
-        title: 'Email',
-        link: 'omolojashade@gmail.com'
-    },
+
     {
         src: 'Location.svg',
         title: 'Address',
         link: 'Lagos, Nigeria'
     },
+    {
+        src: 'Email.svg',
+        title: 'Email',
+        link: 'omolojashade@gmail.com'
+    },
 ]
 
 const SideBarDetails = () => {
   return (
-    <section className='h-full w-full bg-white px-6 pt-[90px] rounded-[20px]  text-center pb-[60px] relative top-[-75px]'>
+    <section className='h-full w-full bg-white px-6 max-xxsm:px-4 pt-[90px] rounded-[20px]  text-center pb-[60px] relative top-[-75px]'>
         <h1 className='font-bold text-[24px] '>Folashade Omoloja</h1>
         <span className='mt-6 font-semibold text-[#0b090996]'>Front End Developer</span>
         <section className='flex mt-7 gap-2 justify-center'>
@@ -43,7 +44,7 @@ const SideBarDetails = () => {
                 socialIcons.map((item, idx)=>{
                     return (
                         <a href={item.href} target="_blank" key={idx}>
-                        <div  className='w-[70px] h-[70px] bg-[#F2F7FC] div-center  rounded-lg'>
+                        <div  className='w-[70px] h-[70px] max-xxsm:w-[55px] max-xxsm:h-[55px] bg-[#F2F7FC] div-center  rounded-lg'>
                             <img src={item.icon} alt={item.icon} className='w-5' />
                        </div>
                        </a>
@@ -51,20 +52,20 @@ const SideBarDetails = () => {
                 })
              }
         </section>
-        <section className='mt-6 bg-[#F2F5F9]  rounded-[20px] py-[33px]'>
+        <section className='mt-6 bg-[#F2F5F9]  rounded-[20px] py-[33px] max-xxsm:bg-transparent'>
             {
                 contactInfo.map((item, idx)=>{
                     return(
-                    <div key={idx} className='flex flex-col items-center pl-9'>
-                        <div  className='flex gap-3 items-center h-[63px] w-full mb-[18px] text-left'>
+                    <div key={idx} className='flex flex-col  items-center pl-9 max-xlg:pl-[10px] max-xxsm:pl-0'>
+                        <div  className='flex gap-3 items-center h-[63px] w-full mb-[18px] text-left max-lg:justify-center max-sm:justify-start'>
                              <img src={item.src} alt="" />
-                             <div className='flex flex-col'>
+                             <div className='flex flex-col max-xlg:text-[14px]'>
                                 <span className='text-[#0b090996]'>{item.title}</span>
                                 <span className='font-semibold'>{item.link}</span>
                              </div>
    
                         </div>
-                        <div className='bg-[#E3E3E3] w-[250px] h-[1px]'></div>
+                        <div className='bg-[#E3E3E3] w-[250px] h-[1px] max-sm:w-full'></div>
                     </div>
                     )
                 })

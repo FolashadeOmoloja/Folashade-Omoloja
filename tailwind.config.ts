@@ -15,9 +15,9 @@ const config: Config = {
       },
       screens: {
         'xsm': '375px',
-        'xxsm': '400px',
+        'xxsm': '420px',
         'slg': '870px',
-        'xlg': '1250px'
+        'xlg': '1200px'
       },
     },
   },

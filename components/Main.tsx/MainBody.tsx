@@ -4,10 +4,10 @@ import SideBar from './SideNav/SideBar'
 const MainBody = () => {
   return (
     <main className='grid grid-cols-12 gap-5 mt-11'>
-       <div className=' col-span-4'>
+       <div className=' lg:col-span-4 col-span-12 h-[785px]'>
           <SideBar/>
        </div>
-       <div className='border-orange-600  border  col-span-8 h-[786px]' ></div>
+       <div className='border-orange-600  border col-span-12 lg:col-span-8 h-[795px] rounded-[20px]' ></div>
     </main>
   )
 }
