@@ -11,15 +11,6 @@ html, body {
 }
 
 
-:root {
-  --font-poppins: ${poppinsFont.css()};
-  --font-pacifico: ${ralewayFont.css()};
-}
-
-
-.h1 {
-  font-family: var(--font-poppins);
-}
 
 @layer components {
   .bg-btngradient{
@@ -71,12 +62,15 @@ html, body {
   animation: aboutSpinner 5s linear infinite;
 }
 
-
-@keyframes aboutSpinner{
-  100%{
-      transform: translate(-50%, -50%) rotate(360deg);   
-  }
+.nav-item:hover, .nav-active{
+background: linear-gradient(to right, #FF9C1A, #ED250A );
 }
+
+.nav-item:hover span, .nav-active span{
+  color: white;
+  font-weight: bold;
+}
+
 
 
 /* keyframes */
@@ -121,6 +115,13 @@ html, body {
 .changeDarkThemeBtn{
   animation: changeDarkTheme 2s ease-in-out;
 }
+
+@keyframes aboutSpinner{
+  100%{
+      transform: translate(-50%, -50%) rotate(360deg);   
+  }
+}
+
 
 
 @media (prefers-color-scheme: dark) {
