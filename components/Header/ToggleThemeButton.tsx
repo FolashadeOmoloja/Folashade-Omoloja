@@ -31,7 +31,7 @@ const ToggleThemeButton = () => {
 
     };
   
-    console.log(suntheme);
+
   
     return (
       <button

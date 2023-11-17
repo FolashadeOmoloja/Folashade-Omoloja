@@ -12,6 +12,9 @@ const PortfolioDetails = () => {
   return (
     <section className=''>
        <NavBar/>
+       <section className='bg-white h-full w-full mt-5 rounded-[20px] px-[62px]'>
+
+       </section>
     </section>
   )
 }

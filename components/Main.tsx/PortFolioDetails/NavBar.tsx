@@ -36,7 +36,7 @@ const NavBar = () => {
         setShowNav(!showNav)
     }
 
-    console.log(active)
+   
   return (
    <nav className="flex justify-end">
 
