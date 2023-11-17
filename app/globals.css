@@ -34,20 +34,6 @@ html, body {
   }
 }
 
-.bg-testgradient{
-
-  background: linear-gradient(to right, #e74c3c, #f39c12);
-
-  /* background: linear-gradient(to right, #2ecc71, #3498db); */
-  /* background: linear-gradient(to right, #2ecc71, #27ae60); */
-
-  /* background: linear-gradient(to right, #1abc9c, #16a085); */
-
-
-
-
-}
-
 
 
 
@@ -62,6 +48,29 @@ html, body {
 .btn:hover {
 
   background-position: right center;
+}
+
+.spin_img{
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0);
+  z-index: 100;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border-top: .2rem solid transparent;
+  border-bottom: .2rem solid transparent;
+  border-left: .2rem solid #FF9C1A;
+  border-right: .2rem solid #ED250A;
+  animation: aboutSpinner 5s linear infinite;
+}
+
+
+@keyframes aboutSpinner{
+  100%{
+      transform: translate(-50%, -50%) rotate(360deg);   
+  }
 }
 
 

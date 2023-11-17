@@ -3,7 +3,7 @@ import SideBar from './SideNav/SideBar'
 
 const MainBody = () => {
   return (
-    <main className='grid grid-cols-12 gap-5'>
+    <main className='grid grid-cols-12 gap-5 mt-11'>
        <div className=' col-span-4'>
           <SideBar/>
        </div>
