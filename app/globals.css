@@ -16,6 +16,11 @@ html, body {
   --font-pacifico: ${ralewayFont.css()};
 }
 
+
+.h1 {
+  font-family: var(--font-poppins);
+}
+
 @layer components {
   .bg-btngradient{
     @apply bg-gradient-to-r from-[#FF9C1A]  to-[#ED250A];

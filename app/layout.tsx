@@ -12,12 +12,7 @@ const pacifico = Pacifico({
   
 })
 
-const poppins= Poppins({
-  subsets: ['latin'],
-  weight:['400'],
-  variable: '--font-poppins'
-  
-})
+
 
 export const metadata: Metadata = {
   title: 'Folashade Omoloja',

@@ -1,5 +1,6 @@
 import React from 'react'
 import SideBar from './SideNav/SideBar'
+import PortfolioDetails from './PortFolioDetails/PortfolioDetails'
 
 const MainBody = () => {
   return (
@@ -7,7 +8,10 @@ const MainBody = () => {
        <div className=' lg:col-span-4 col-span-12 h-[785px]'>
           <SideBar/>
        </div>
-       <div className='border-orange-600  border col-span-12 lg:col-span-8 h-[795px] rounded-[20px]' ></div>
+       <div className=' col-span-12 lg:col-span-8 h-[795px] rounded-[20px]' >
+             <PortfolioDetails/>
+
+       </div>
     </main>
   )
 }
