@@ -1,4 +1,3 @@
-"use client"
 import { RiHomeHeartLine } from "react-icons/ri";
 import { MdOutlineLibraryBooks, MdWorkOutline } from "react-icons/md";
 import { BsEmojiLaughingFill } from "react-icons/bs";
@@ -25,11 +24,26 @@ const navItem = [
     }
 ]
 
-const NavBar = () => {
-    const [active, setActive] = useState(-1)
+interface Iprop {
+    propUseState?: (value: string) => void;  
+}
+
+const NavBar:React.FC<Iprop> = ({propUseState}) => {
+    const [active, setActive] = useState(0)
     const [showNav, setShowNav] = useState (true)
     const handleClick = (idx:number) =>{
         setActive(idx)
+        if(propUseState){
+            if (idx==0){
+            propUseState('Home')
+            } else if (idx==1){
+            propUseState('Resume')   
+            } else if (idx==2){
+                propUseState('Work')
+            } else if (idx==3){
+                propUseState('Contact')
+            }
+        }
     }
 
     const handleShowNav = () =>{

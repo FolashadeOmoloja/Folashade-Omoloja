@@ -1,6 +1,11 @@
 import React from 'react'
 
-const About = () => {
+
+interface Iprop {
+     propUseState?: (value: boolean) => void;  
+ }
+
+const About:React.FC<Iprop> = ({propUseState}) => {
   return (
     <div>About</div>
   )
