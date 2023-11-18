@@ -1,3 +1,4 @@
+"use client"
 import { Poppins } from 'next/font/google'
 import NavBar from './NavBar'
 
@@ -12,8 +13,8 @@ const PortfolioDetails = () => {
   return (
     <section className=''>
        <NavBar/>
-       <section className='bg-white h-full w-full mt-5 rounded-[20px] px-[62px]'>
-
+       <section className='bg-white h-[687px] w-full mt-3 rounded-[20px] px-[62px] py-8'>
+                  
        </section>
     </section>
   )
