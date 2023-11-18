@@ -18,13 +18,14 @@ html, body {
 
 /* Track */
 .scrollbar::-webkit-scrollbar-track {
-  background: #E3F0F9;
+  background: linear-gradient(to right, #ff9c1a6e, #ed240a7e );
+  border-radius: 20px;
 }
 
 /* Handle */
 .scrollbar::-webkit-scrollbar-thumb {
-  background: #E3F0F9;
-  border-radius: 5px;
+  background: transparent;
+  border-radius: 20px;
 }
 
 
