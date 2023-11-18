@@ -10,6 +10,23 @@ html, body {
     display: none;
 }
 
+/* width */
+.scrollbar::-webkit-scrollbar {
+  display: block;
+  width: 10px;
+}
+
+/* Track */
+.scrollbar::-webkit-scrollbar-track {
+  background: #E3F0F9;
+}
+
+/* Handle */
+.scrollbar::-webkit-scrollbar-thumb {
+  background: #E3F0F9;
+  border-radius: 5px;
+}
+
 
 
 @layer components {
@@ -73,6 +90,10 @@ background: linear-gradient(to right, #FF9C1A, #ED250A );
 .nav-item:hover span, .nav-active span{
   color: white;
   font-weight: bold;
+}
+
+.qualific div:nth-child(even){
+background-color: #ff9c1a59;
 }
 
 
