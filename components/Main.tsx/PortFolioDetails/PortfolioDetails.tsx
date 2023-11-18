@@ -22,7 +22,7 @@ const PortfolioDetails = () => {
        <section className='bg-white h-[687px] w-full mt-3 rounded-[20px] px-[62px] py-8'>
              {
               display === 'Home'?(
-                <About/>
+                <About fontFamily={poppins.className}/>
               ): display === 'Resume'?(
               <Resume/>
               ): display === 'Work'?(

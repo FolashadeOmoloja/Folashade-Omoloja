@@ -14,6 +14,7 @@ const SideBar = () => {
         width={150}
         layout="intrinsic"
         quality="100"
+        priority={true} 
       />
 
         </div>
