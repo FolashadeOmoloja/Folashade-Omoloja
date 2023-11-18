@@ -6,7 +6,7 @@ const qualifications = [
   {heading:'REACT & NEXT.JS Developer',
    icon:<FaReact />,
    text: `As a front-end developer, my primary playground is React.js, and I am also well-versed in the intricacies of Next.js. I'm deeply passionate about creating dynamic and responsive user interfaces using the power of React's component-based architecture. With Next.js, I seamlessly extend these capabilities, leveraging server-side rendering and efficient routing to build performant web applications. From state management to reusable components, I excel in crafting seamless and efficient user experiences.`,
-   color: 'text-[#61dafb]'
+   color: 'text-[#06bcee]'
    },
    {heading:'RESPONSIVE DESIGN ADVOCATE',
    icon:<MdPhonelink />,
@@ -16,8 +16,8 @@ const qualifications = [
    },
    {heading:'JAVASCRIPT Developer',
    icon:<SiJavascript />,
-   text: `At the core of every interactive web experience is JavaScript, and I take pride in my proficiency with this versatile language. Whether it's enhancing user interfaces, handling asynchronous operations, or implementing requests, I leverage the full potential of JavaScript to bring websites to life. I'm constantly exploring new ECMAScript features and modern JavaScript frameworks to stay ahead in the dynamic world of front-end development.`,
-   color:'text-[#f7df1e]'
+   text: `At the core of every interactive web experience is JavaScript, and I take pride in my proficiency with this versatile language. Whether it's enhancing user interfaces, handling asynchronous operations, or implementing requests, I leverage the full potential of JavaScript to bring websites to life. I'm constantly exploring new features and modern JavaScript frameworks to stay ahead in the dynamic world of front-end development.`,
+   color:'text-[#ED250A]'
    },
    {heading:'ANIMATION ENTHUSIAST',
    icon:<MdAnimation />,
@@ -48,7 +48,7 @@ const About:React.FC<Iprop> = ({fontFamily}) => {
                        return(
                         <div className="bg-[#ed240a4b] p-4 leading-5 rounded-[20px] min-h-[180px]  flex-col div-center qualific-div" key={idx}>
                               <div className="flex gap-5 items-center text-[24px] w-full mb-4">
-                                <span className={`${item.color}`}>{item.icon}</span>
+                                <span className={`bg-text`}>{item.icon}</span>
                                 <h4 className={`font-semibold ${fontFamily} uppercase w-full text-start`}>{item.heading}</h4>     
                               </div> 
                               <p className="tracking-[2.5%] text-sm  ">{item.text}</p> 
