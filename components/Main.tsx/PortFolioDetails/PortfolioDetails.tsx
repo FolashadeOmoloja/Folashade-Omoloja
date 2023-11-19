@@ -9,7 +9,7 @@ import Contact from './Contact'
 
 const poppins= Poppins({
     subsets: ['latin'],
-    weight:['400'],
+    weight:['400', '500', '600', '700'],
     variable: '--font-poppins'
     
   })
@@ -19,7 +19,7 @@ const PortfolioDetails = () => {
   return (
     <section className=''>
        <NavBar propUseState={setDisplay}/>
-       <section className='bg-white h-[687px] w-full mt-3 rounded-[20px]  py-8'>
+       <section className='bg-white h-[687px] max-lg:h-full w-full mt-3 rounded-[20px]  py-8'>
              {
               display === 'Home'?(
                 <About fontFamily={poppins.className}/>

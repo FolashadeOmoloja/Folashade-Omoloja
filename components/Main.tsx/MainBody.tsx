@@ -8,7 +8,7 @@ const MainBody = () => {
        <div className=' lg:col-span-4 col-span-12 h-[785px]'>
           <SideBar/>
        </div>
-       <div className=' col-span-12 lg:col-span-8  rounded-[20px] max-lg:mt-8' >
+       <div className=' col-span-12 lg:col-span-8  rounded-[20px] max-lg:mt-8  max-lg:mb-20 ' >
              <PortfolioDetails/>
 
        </div>
