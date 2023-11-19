@@ -24,7 +24,7 @@ const PortfolioDetails = () => {
               display === 'Home'?(
                 <About fontFamily={poppins.className} />
               ): display === 'Resume'?(
-              <Resume/>
+              <Resume  fontFamily={poppins.className}/>
               ): display === 'Work'?(
                 <Work/>
               ):  display === 'Contact'?(
