@@ -101,6 +101,12 @@ background: linear-gradient(to right, #FF9C1A, #ED250A );
 background-color: #ff9c1a59;
 }
 
+.qualific div:nth-child(odd){
+  box-shadow: 5px 5px 0px 0px #ed240a4b;
+
+  }
+  
+
 
 
 /* keyframes */

@@ -39,11 +39,11 @@ const Resume:React.FC<Iprop> = ({fontFamily}) => {
         <section className="flex gap-[50px]">
            <section>
                   <h3 className="h3-header">Experience</h3>
-                  <div className="qualific">
+                  <div className="qualific flex flex-col gap-5">
                     {
                         experience.map(()=>{
                           return(
-                            <div className="w-[290px] h-[120px] bg-[#ed240a4b] rounded-[20px] shadow-[5px_5px_0px_0px_rgba(109,40,217)]">
+                            <div className="w-[290px] h-[120px] bg-[#ed240a4b] rounded-[20px] shadow-[5px_5px_0px_0px_#ed240a4b]">
 
                             </div>
                           )
