@@ -52,7 +52,7 @@ html, body {
   }
 
   .h3-header{
-   @apply text-[28px] leading-[46.2] tracking-[2.5%]
+   @apply text-[28px] leading-[46.2px] tracking-[2.5%] font-[500] mb-5
   }
 }
 

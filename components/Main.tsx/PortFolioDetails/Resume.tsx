@@ -12,6 +12,14 @@ const Resume:React.FC<Iprop> = ({fontFamily}) => {
             <h2 className='text-[40px] tracking-[2.5%] leading-[40px] font-semibold max-sm:text-[32px] uppercase' >Resume</h2>
             <div className='bg-btngradient w-[250px] h-[2px] rounded-[20px] max-sm:w-[160px]'></div>
         </div>
+        <section className="flex gap-[50px]">
+           <section>
+                  <h3 className="h3-header">Experience</h3>
+           </section>
+           <section>
+             <h3 className="h3-header">Education</h3>
+           </section>
+        </section>
 
         
    </section>
