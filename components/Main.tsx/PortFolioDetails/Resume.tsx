@@ -36,14 +36,14 @@ const Resume:React.FC<Iprop> = ({fontFamily}) => {
             <h2 className='text-[40px] tracking-[2.5%] leading-[40px] font-semibold max-sm:text-[32px] uppercase' >Resume</h2>
             <div className='bg-btngradient w-[250px] h-[2px] rounded-[20px] max-sm:w-[160px]'></div>
         </div>
-        <section className="flex justify-between">
+        <section className="flex justify-between max-lg:flex-col">
            <section>
                   <h3 className="h3-header">Experience</h3>
                   <div className="qualific qualific-1 flex flex-col gap-5">
                     {
                         experience.map((item,idx)=>{
                           return(
-                            <div className="w-[290px] h-[135px] bg-[#ed240a4b] rounded-[20px] shadow-[5px_5px_0px_0px_#ff9c1ab9] p-[10px] text-sm flex flex-col gap-[2px]" key={idx}>
+                            <div className="resume-box " key={idx}>
                               <span className="text-[#1A1003]">{item.date}</span>
                               <span className="font-semibold">{item.company}</span>
                               <p>{item.description}</p>
@@ -55,11 +55,11 @@ const Resume:React.FC<Iprop> = ({fontFamily}) => {
            </section>
            <section>
              <h3 className="h3-header">Education</h3>
-             <div className="qualific-2 flex flex-col gap-5">
+             <div className="qualific-2 flex flex-col gap-5" >
                     {
                         education.map((item,idx)=>{
                           return(
-                            <div className="w-[290px] h-[135px] bg-[#ed240a4b] rounded-[20px] shadow-[5px_5px_0px_0px_#ff9c1ab9] p-[10px] text-sm flex flex-col gap-[2px]" key={idx}>
+                            <div className="resume-box" key={idx}>
                               <span className="text-[#1A1003]">{item.date}</span>
                               <span className="font-semibold">{item.company}</span>
                               <p>{item.description}</p>
