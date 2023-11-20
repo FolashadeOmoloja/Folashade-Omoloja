@@ -1,4 +1,28 @@
+const experience = [
+  {
+    date:'',
+    company:'',
+    description:'',
+  },
+  {
+    date:'',
+    company:'',
+    description:'',
+  },
+]
 
+const education = [
+  {
+    date:'',
+    company:'',
+    description:'',
+  },
+  {
+    date:'',
+    company:'',
+    description:'',
+  },
+]
 
 interface Iprop {
       fontFamily?: any;
@@ -15,6 +39,17 @@ const Resume:React.FC<Iprop> = ({fontFamily}) => {
         <section className="flex gap-[50px]">
            <section>
                   <h3 className="h3-header">Experience</h3>
+                  <div className="qualific">
+                    {
+                        experience.map(()=>{
+                          return(
+                            <div className="w-[290px] h-[120px] bg-[#ed240a4b] rounded-[20px] shadow-[5px_5px_0px_0px_rgba(109,40,217)]">
+
+                            </div>
+                          )
+                        })
+                    }
+                  </div>
            </section>
            <section>
              <h3 className="h3-header">Education</h3>
