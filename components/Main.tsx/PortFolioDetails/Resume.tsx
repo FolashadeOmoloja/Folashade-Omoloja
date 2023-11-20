@@ -1,26 +1,26 @@
 const experience = [
   {
-    date:'',
-    company:'',
-    description:'',
+    date:'2023-01 – 2023-06',
+    company:'Hitec City Technologies',
+    description:'As a front-end developer, I built reusable components and  functional pages for the company using best practices.',
   },
   {
-    date:'',
-    company:'',
-    description:'',
+    date:'2022-08 –2023-03',
+    company:'Women Techsters Fellowship,Tech4dev',
+    description:'As a women techsters fellow, I collaborated with a team to build modern responsive web applications using best practices',
   },
 ]
 
 const education = [
   {
-    date:'',
-    company:'',
-    description:'',
+    date:'2022-08 – 2023-03',
+    company:'Women Techsters Fellowship, Class of 2023 - Tech4dev',
+    description:'Software Development - Front end',
   },
   {
-    date:'',
-    company:'',
-    description:'',
+    date:'2016-12 – 2023-08',
+    company:'UNIVERSITY OF LAGOS – LAGOS, NIGERIA',
+    description:'Bachelor of Science: Civil and Environmental Engineering',
   },
 ]
 
@@ -36,15 +36,17 @@ const Resume:React.FC<Iprop> = ({fontFamily}) => {
             <h2 className='text-[40px] tracking-[2.5%] leading-[40px] font-semibold max-sm:text-[32px] uppercase' >Resume</h2>
             <div className='bg-btngradient w-[250px] h-[2px] rounded-[20px] max-sm:w-[160px]'></div>
         </div>
-        <section className="flex gap-[50px]">
+        <section className="flex justify-between">
            <section>
                   <h3 className="h3-header">Experience</h3>
                   <div className="qualific qualific-1 flex flex-col gap-5">
                     {
-                        experience.map(()=>{
+                        experience.map((item,idx)=>{
                           return(
-                            <div className="w-[290px] h-[120px] bg-[#ed240a4b] rounded-[20px] shadow-[5px_5px_0px_0px_#ff9c1ab9]">
-
+                            <div className="w-[290px] h-[135px] bg-[#ed240a4b] rounded-[20px] shadow-[5px_5px_0px_0px_#ff9c1ab9] p-[10px] text-sm flex flex-col gap-[2px]" key={idx}>
+                              <span className="text-[#1A1003]">{item.date}</span>
+                              <span className="font-semibold">{item.company}</span>
+                              <p>{item.description}</p>
                             </div>
                           )
                         })
@@ -55,10 +57,12 @@ const Resume:React.FC<Iprop> = ({fontFamily}) => {
              <h3 className="h3-header">Education</h3>
              <div className="qualific-2 flex flex-col gap-5">
                     {
-                        experience.map(()=>{
+                        education.map((item,idx)=>{
                           return(
-                            <div className="w-[290px] h-[120px] bg-[#ed240a4b] rounded-[20px] shadow-[5px_5px_0px_0px_#ed240a4b]">
-
+                            <div className="w-[290px] h-[135px] bg-[#ed240a4b] rounded-[20px] shadow-[5px_5px_0px_0px_#ff9c1ab9] p-[10px] text-sm flex flex-col gap-[2px]" key={idx}>
+                              <span className="text-[#1A1003]">{item.date}</span>
+                              <span className="font-semibold">{item.company}</span>
+                              <p>{item.description}</p>
                             </div>
                           )
                         })
