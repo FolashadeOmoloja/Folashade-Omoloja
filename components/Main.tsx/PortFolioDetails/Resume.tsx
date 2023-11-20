@@ -24,6 +24,13 @@ const education = [
   },
 ]
 
+const technicalSkills=[
+  'HTML 5', 'CSS 3', 'JavaScript', 'React.js', 'TypeScript','Next js' ,'Tailwind Css','Styled-Components',  "Bootstrap", 'Git', 'Api Consumption'
+]
+const softSkills=[
+'Agile Methodologies','Effective Communication' ,'Time Management', 'Flexibility', 'Problem Solving', 'Leadership', 'Technical writing', 'Content Creation'
+]
+
 interface Iprop {
       fontFamily?: any;
      propUseState?: (value: boolean) => void;  
@@ -31,12 +38,12 @@ interface Iprop {
 
 const Resume:React.FC<Iprop> = ({fontFamily}) => {
   return (
-   <section className="px-[62px] max-lg:px-[20px]">
+   <section className="px-[62px] max-xlg:px-[20px]">
         <div className={`${fontFamily} flex items-center gap-8 mb-4  max-sm:flex-col max-sm:items-start max-sm:gap-1`}>
             <h2 className='text-[40px] tracking-[2.5%] leading-[40px] font-semibold max-sm:text-[32px] uppercase' >Resume</h2>
             <div className='bg-btngradient w-[250px] h-[2px] rounded-[20px] max-sm:w-[160px]'></div>
         </div>
-        <section className="flex justify-between max-lg:flex-col">
+        <section className="flex justify-between max-lg:flex-col max-lg:gap-8">
            <section>
                   <h3 className="h3-header">Experience</h3>
                   <div className="qualific qualific-1 flex flex-col gap-5">
@@ -63,6 +70,36 @@ const Resume:React.FC<Iprop> = ({fontFamily}) => {
                               <span className="text-[#1A1003]">{item.date}</span>
                               <span className="font-semibold">{item.company}</span>
                               <p>{item.description}</p>
+                            </div>
+                          )
+                        })
+                    }
+                  </div>
+           </section>
+        </section>
+        <section className="flex justify-between max-lg:flex-col max-lg:gap-8 mt-5">
+           <section>
+                  <h3 className="h3-header mb-1 max-lg:mb-5">Technical Skills</h3>
+                  <div className="flex flex-wrap gap-2">
+                    {
+                        technicalSkills.map((item,idx)=>{
+                          return(
+                            <div className="bg-[#E1E8EF] text-[12px] p-2 rounded-lg"  key={idx}>
+                              <span>{item}</span>
+                            </div>
+                          )
+                        })
+                    }
+                  </div>
+           </section>
+           <section>
+             <h3 className="h3-header mb-1 max-lg:mb-5">Soft Skills</h3>
+             <div className="flex flex-wrap gap-2">
+                    {
+                        softSkills.map((item,idx)=>{
+                          return(
+                            <div className="bg-[#E1E8EF] text-[12px] p-2 rounded-lg"  key={idx}>
+                              <span>{item}</span>
                             </div>
                           )
                         })

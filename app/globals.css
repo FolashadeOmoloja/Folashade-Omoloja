@@ -52,10 +52,10 @@ html, body {
   }
 
   .h3-header{
-   @apply text-[28px] leading-[46.2px] tracking-[2.5%] font-[500] mb-5
+   @apply text-[28px] leading-[46.2px] tracking-[2.5%] font-[500] mb-4
   }
   .resume-box{
-    @apply w-[290px] h-[135px] bg-[#ed240a4b] rounded-[20px] shadow-[5px_5px_0px_0px_#ff9c1ab9] p-[10px] text-sm flex flex-col gap-[2px] 
+    @apply w-[290px] h-[135px] bg-[#ed240a4b] rounded-[20px] shadow-[5px_5px_0px_0px_#ff9c1ab9] p-[10px] text-sm flex flex-col gap-[2px] max-lg:w-full max-lg:justify-between max-lg:p-5 max-xxsm:h-[170px] max-xsm:h-full
   }
 }
 
