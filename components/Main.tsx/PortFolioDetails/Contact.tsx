@@ -5,8 +5,8 @@ import {RiRefreshLine} from 'react-icons/ri'
 import {FaThumbsUp} from 'react-icons/fa'
 import {HiOutlineThumbUp} from 'react-icons/hi'
 
-// import { useRef } from 'react';
-// import emailjs from 'emailjs-com';
+import { useRef } from 'react';
+import emailjs from 'emailjs-com';
 
 
 interface Iprop {
@@ -15,20 +15,22 @@ interface Iprop {
 }
 
 const Contact:React.FC<Iprop> = ({fontFamily}) => {
-  // const form = useRef();
+  const form = useRef();
 
-  // const sendEmail = (e) => {
-  //   e.preventDefault();
+  const sendEmaill = (e: { preventDefault: () => void; target: { reset: () => void; }; }) => {
+    e.preventDefault();
 
-  //   emailjs.sendForm('service_c9krp47', 'template_2654o93', form.current, 'ao3w_tPLF4KrdUp07')
-  //     .then((result) => {
-  //       console.log(result.text);
-  //     }, (error) => {
-  //       console.log(error.text);
-  //     });
+    emailjs.sendForm(process.env.NEXT_PUBLIC_SERVICE_KEY as string, process.env.NEXT_PUBLIC_TEMPLATE as string, form.current as unknown as string, process.env.NEXT_PUBLIC_EMAILJS as string) 
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
 
-  //   e.target.reset();
-  // };
+    e.target.reset();
+  };
+
+  console.log(process.env.NEXT_PUBLIC_SERVICE_KEY,process.env.NEXT_PUBLIC_TEMPLATE,process.env.NEXT_PUBLIC_EMAILJS)
 
   const [message, setMessage] = useState('');
   const [load, setLoad] = useState(true)
