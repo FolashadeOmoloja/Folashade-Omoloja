@@ -33,7 +33,6 @@ const softSkills=[
 
 interface Iprop {
       fontFamily?: any;
-     propUseState?: (value: boolean) => void;  
  }
 
 const Resume:React.FC<Iprop> = ({fontFamily}) => {
