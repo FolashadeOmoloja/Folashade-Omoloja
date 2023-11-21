@@ -84,7 +84,7 @@ const Resume:React.FC<Iprop> = ({fontFamily}) => {
                     {
                         technicalSkills.map((item,idx)=>{
                           return(
-                            <div className="bg-[#E1E8EF] text-[12px] p-2 rounded-lg"  key={idx}>
+                            <div className="skills"  key={idx}>
                               <span>{item}</span>
                             </div>
                           )
@@ -98,7 +98,7 @@ const Resume:React.FC<Iprop> = ({fontFamily}) => {
                     {
                         softSkills.map((item,idx)=>{
                           return(
-                            <div className="bg-[#E1E8EF] text-[12px] p-2 rounded-lg"  key={idx}>
+                            <div className="skills"  key={idx}>
                               <span>{item}</span>
                             </div>
                           )
