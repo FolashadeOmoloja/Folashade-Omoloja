@@ -61,7 +61,7 @@ html, body {
     @apply bg-[#E1E8EF] text-[12px] p-2 rounded-lg cursor-pointer hover:bg-btngradient hover:text-white font-semibold transition-all
   }
   .form-input{
-    @apply w-full p-4 outline-none border-[#ED250A] border bg-white
+    @apply w-full p-4 outline-none border-[#ed240a85] rounded-lg border bg-white text-sm
   }
 }
 
@@ -164,6 +164,25 @@ background: linear-gradient(to right, #FF9C1A, #ED250A );
   100%{
       transform: translate(-50%, -50%) rotate(360deg);   
   }
+}
+
+
+@keyframes spin {
+  0% {
+
+    transform: rotate(0deg);
+  }
+
+  50%{
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner {
+  animation: spin 2s linear  infinite;
 }
 
 
