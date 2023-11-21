@@ -28,7 +28,7 @@ const PortfolioDetails = () => {
               ): display === 'Work'?(
                 <Work/>
               ):  display === 'Contact'?(
-                <Contact/>
+                <Contact fontFamily={poppins.className} />
               ): null
              }     
        </section>

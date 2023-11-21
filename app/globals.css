@@ -60,6 +60,9 @@ html, body {
   .skills{
     @apply bg-[#E1E8EF] text-[12px] p-2 rounded-lg cursor-pointer hover:bg-btngradient hover:text-white font-semibold transition-all
   }
+  .form-input{
+    @apply w-full p-4 outline-none border-[#ED250A] border bg-white
+  }
 }
 
 
