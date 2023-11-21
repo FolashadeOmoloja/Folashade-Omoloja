@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import {RiRefreshLine} from 'react-icons/ri'
-import {FaThumbsUp} from 'react-icons/fa'
 import {HiOutlineThumbUp} from 'react-icons/hi'
 
 import { useRef } from 'react';
@@ -15,43 +14,35 @@ interface Iprop {
 }
 
 const Contact:React.FC<Iprop> = ({fontFamily}) => {
-  const form = useRef();
-
-  const sendEmaill = (e: { preventDefault: () => void; target: { reset: () => void; }; }) => {
-    e.preventDefault();
-
-    emailjs.sendForm(process.env.NEXT_PUBLIC_SERVICE_KEY as string, process.env.NEXT_PUBLIC_TEMPLATE as string, form.current as unknown as string, process.env.NEXT_PUBLIC_EMAILJS as string) 
-      .then((result) => {
-        console.log(result.text);
-      }, (error) => {
-        console.log(error.text);
-      });
-
-    e.target.reset();
-  };
-
-  console.log(process.env.NEXT_PUBLIC_SERVICE_KEY,process.env.NEXT_PUBLIC_TEMPLATE,process.env.NEXT_PUBLIC_EMAILJS)
-
-  const [message, setMessage] = useState('');
-  const [load, setLoad] = useState(true)
+  const formRef = useRef<HTMLFormElement>(null);
+  const [load, setLoad] = useState(false);
   const [messageSent, setMessageSent] = useState(false);
   const [buttonDisabled, setButtonDisabled] = useState(false);
 
-  const sendEmail = (e: React.MouseEvent<HTMLButtonElement>) => {
-      e.preventDefault();
-      setMessage('');
-      setMessageSent(true);
-      setButtonDisabled(true);  
-      setLoad(true)
-      setTimeout(() => {
-        setLoad(false);
-      }, 1000);
-      setTimeout(() => {
-          setMessageSent(false);
-          setButtonDisabled(false)
-        }, 2000);
+  const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    
+    setMessageSent(true);
+    setButtonDisabled(true);
+    setLoad(true);
+
+    try {
+      const result = await emailjs.sendForm(
+        process.env.NEXT_PUBLIC_SERVICE_KEY as string,
+        process.env.NEXT_PUBLIC_TEMPLATE as string,
+        formRef.current as HTMLFormElement,
+        process.env.NEXT_PUBLIC_EMAILJS as string
+      );
       
-    };
+    } catch (error) {
+      console.error(error);
+    }
+
+    setLoad(false);
+    setMessageSent(false);
+    setButtonDisabled(false);
+    formRef.current?.reset();
+  };
 
   return (
     <section id='contact' className='px-[62px] max-xlg:px-[20px]'>
@@ -63,7 +54,8 @@ const Contact:React.FC<Iprop> = ({fontFamily}) => {
       <div
         className='relative gap-6 bg-[#ed240a38] rounded-[20px] p-8'
       >
-        <form onSubmit={(e)=>sendEmail(e as unknown as React.MouseEvent<HTMLButtonElement>)} className='flex flex-col gap-6 w-70'>
+       
+        <form ref={formRef} onSubmit={(e)=>sendEmail(e)} className='flex flex-col gap-6 w-70'>
           <input type='text' name='name' placeholder='Your Full Name' required className='form-input ' />
           <input type='email' name='email' placeholder='Your email address' required className='form-input ' />
           <input type='text' name='subject' placeholder='Subject' required className='form-input ' />
