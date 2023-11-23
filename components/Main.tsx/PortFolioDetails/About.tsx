@@ -36,8 +36,8 @@ const About:React.FC<Iprop> = ({fontFamily}) => {
   return (
    <section>
         <div className={`${fontFamily} flex items-center gap-8 mb-4 px-[62px] max-lg:px-[20px] max-sm:flex-col max-sm:items-start max-sm:gap-1`}>
-            <h2 className='text-[40px] tracking-[2.5%] leading-[40px] font-semibold max-sm:text-[32px]' >ABOUT ME</h2>
-            <div className='bg-btngradient w-[250px] h-[2px] rounded-[20px] max-sm:w-[160px]'></div>
+            <h2 className='header-title' >ABOUT ME</h2>
+            <div className='header-line'></div>
         </div>
         <p className='font-[500] leading-[30px] px-[62px] max-lg:px-[20px]'>Hello there! I'm Folashade, a Front end developer, solving problems one code at a time. I specialize in building Frontend applications, I take pride in my work and ensure I deliver the most accessible and most responsive application possible. It's not just about writing code; it's about building experiences that leave a lasting impression <img src="emoji.png" alt=""  className='w-5 h-5 inline-block'/>.</p>
         <section className='mt-[26px]  pl-[62px] pr-[52px] max-lg:px-[20px] max-xsm:px-[10px]'>
