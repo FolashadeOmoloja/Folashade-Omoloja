@@ -46,23 +46,23 @@ const Contact:React.FC<Iprop> = ({fontFamily}) => {
 
   return (
     <section id='contact' className='px-[62px] max-xlg:px-[20px] flex flex-col justify-between h-full'>
-        <div className={`${fontFamily} flex items-center gap-8 mb-4  max-sm:flex-col max-sm:items-start max-sm:gap-1`}>
-            <h2 className='text-[40px] tracking-[2.5%] leading-[40px] font-semibold max-sm:text-[32px] uppercase' >Let's talk</h2>
-            <div className='bg-btngradient w-[250px] h-[2px] rounded-[20px] max-sm:w-[160px]'></div>
+        <div className={`${fontFamily} flex items-center gap-8 mb-4  max-md:flex-col max-md:items-start max-md:gap-1`}>
+            <h2 className='text-[40px] tracking-[2.5%] leading-[40px] font-semibold max-md:text-[32px] uppercase' >Let's talk</h2>
+            <div className='bg-btngradient w-[250px] h-[2px] rounded-[20px] max-md:w-[160px]'></div>
         </div>
-        <div className="flex gap-2 max-lg:my-5">
-        <div className="relative bg-white rounded-lg border border-gray-300 shadow-md p-4 max-w-lg mx-auto">
-         <div className="absolute top-0 -mt-3 w-6 h-6 transform rotate-45 bg-white border border-gray-300"></div>
-         <p className="text-gray-700 text-sm leading-tight">
-          Let's transform your business ideas into captivating online experiences 
-          </p>
-    </div>
+        <div className="flex gap-1 max-lg:my-5">
+           <div className="relative bg-white rounded-lg border border-gray-300 shadow-md p-4 max-w-lg mx-auto">
+            <div className="absolute top-0 -mt-3 w-6 h-6 transform rotate-45 bg-white border border-gray-300"></div>
+            <p className="text-gray-700 text-sm leading-tight max-xxsm:text-center">
+             Let's transform your business ideas into captivating online experiences 
+             </p>
+          </div>
         </div>
 
       <div
         className='relative gap-6 bg-[#ed240a38] max-xsm:bg-transparent max-xxsm:px-5 max-xsm:px-0 rounded-[20px] p-8'
       >
-        <img src='girl.svg' alt='' className='absolute top-[-90px] left-[-10px] w-[75px] h-[146px] max-sm:hidden' />
+        <img src='girl.svg' alt='' className='absolute top-[-90px] left-[-10px] w-[75px] h-[146px] max-md:hidden' />
        
         <form ref={formRef} onSubmit={(e)=>sendEmail(e)} className='flex flex-col gap-6 '>
           <input type='text' name='name' placeholder='Your Full Name' required className='form-input ' />
