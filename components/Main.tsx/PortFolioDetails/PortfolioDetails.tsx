@@ -26,7 +26,7 @@ const PortfolioDetails = () => {
               ): display === 'Resume'?(
               <Resume  fontFamily={poppins.className}/>
               ): display === 'Work'?(
-                <Work/>
+                <Work fontFamily={poppins.className}/>
               ):  display === 'Contact'?(
                 <Contact fontFamily={poppins.className} />
               ): null

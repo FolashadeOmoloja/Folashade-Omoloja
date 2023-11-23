@@ -47,8 +47,8 @@ const Contact:React.FC<Iprop> = ({fontFamily}) => {
   return (
     <section id='contact' className='px-[62px] max-xlg:px-[20px] flex flex-col justify-between h-full'>
         <div className={`${fontFamily} flex items-center gap-8 mb-4  max-md:flex-col max-md:items-start max-md:gap-1`}>
-            <h2 className='text-[40px] tracking-[2.5%] leading-[40px] font-semibold max-md:text-[32px] uppercase' >Let's talk</h2>
-            <div className='bg-btngradient w-[250px] h-[2px] rounded-[20px] max-md:w-[160px]'></div>
+            <h2 className='header-title' >Let's talk</h2>
+            <div className='header-line'></div>
         </div>
         <div className="flex gap-1 max-lg:my-5">
            <div className="relative bg-white rounded-lg border border-gray-300 shadow-md p-4 max-w-lg mx-auto">

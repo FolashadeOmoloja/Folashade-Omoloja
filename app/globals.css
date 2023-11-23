@@ -39,6 +39,13 @@ html, body {
     @apply bg-btngradient text-transparent bg-clip-text
   }
 
+  .header-title{
+    @apply text-[40px] tracking-[2.5%] leading-[40px] font-semibold max-md:text-[32px] max-xxsm:text-[28px]  uppercase
+  }
+
+  .header-line{
+    @apply bg-btngradient w-[250px] h-[2px] rounded-[20px] max-md:w-[160px] max-sm:w-[140px]
+  }
   .div-center{
     @apply flex items-center justify-center
   }
