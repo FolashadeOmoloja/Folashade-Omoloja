@@ -50,10 +50,11 @@ const Contact:React.FC<Iprop> = ({fontFamily}) => {
             <h2 className='text-[40px] tracking-[2.5%] leading-[40px] font-semibold max-sm:text-[32px] uppercase' >Let's talk</h2>
             <div className='bg-btngradient w-[250px] h-[2px] rounded-[20px] max-sm:w-[160px]'></div>
         </div>
-      {/* <img src='Group.png' alt='' className='sticker ' /> */}
+
       <div
-        className='relative gap-6 bg-[#ed240a38] rounded-[20px] p-8'
+        className='relative gap-6 bg-[#ed240a38] rounded-[20px] p-8 mt-[30px]'
       >
+        <img src='girl.svg' alt='' className='absolute top-0 left-0' />
        
         <form ref={formRef} onSubmit={(e)=>sendEmail(e)} className='flex flex-col gap-6 w-70'>
           <input type='text' name='name' placeholder='Your Full Name' required className='form-input ' />
