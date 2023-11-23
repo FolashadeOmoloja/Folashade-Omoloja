@@ -9,21 +9,21 @@ const Work:React.FC<Iprop> = ({fontFamily}) => {
         <h2 className='header-title' >Portfolio</h2>
         <div className='header-line'></div>
     </div>
-    <section>
-            <div className='flex gap-5 mt-5 bg-[#F2F5F9] rounded-[20px] p-8' >
-                <span>
+    <section className='w-full flex justify-center'>
+            <div className='flex gap-8 mt-5 bg-[#F2F5F9] rounded-[50px] px-8 py-4 w-[500px] justify-center max-sm:flex-col max-sm:gap-4 div-center ' >
+                <span className='hover:bg-btngradient'>
                   All
                 </span>
-                <span>
+                <span className='hover:bg-btngradient'>
                   Next js
                 </span>
-                <span>
+                <span className='hover:bg-btngradient'>
                   React Js
                 </span>
-                <span>
-                  Vanilla Javascript
+                <span className='hover:bg-btngradient'>
+                  Javascript
                 </span>
-                <span>
+                <span className='hover:bg-btngradient'>
                   Design
                 </span>
             </div>
