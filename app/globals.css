@@ -71,11 +71,11 @@ html, body {
     @apply w-full p-4 outline-none border-[#ed240a85] rounded-lg border bg-white text-sm
   }
   .filter-span{
-    @apply   transition max-sm:w-full  max-sm:px-[4px] max-sm:py-2 max-sm:p-3 rounded-[20px] flex div-center cursor-pointer text-[#57657A] 
+    @apply   transition max-sm:w-full  max-sm:px-[4px] max-sm:py-2 max-sm:p-3 rounded-[20px] flex div-center cursor-pointer text-[#57657A] text-sm
   }
 
   .filter-active, .filter-span:hover{
-    @apply sm:bg-text font-semibold max-sm:bg-btngradient max-sm:text-white 
+    @apply sm:bg-text font-[600]  max-sm:bg-btngradient max-sm:text-white 
   }
  
 }
