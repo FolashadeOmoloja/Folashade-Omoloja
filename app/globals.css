@@ -71,7 +71,7 @@ html, body {
     @apply w-full p-4 outline-none border-[#ed240a85] rounded-lg border bg-white text-sm
   }
   .filter-span{
-    @apply hover:bg-btngradient transition max-sm:w-full hover:text-white px-[4px] py-2 max-sm:p-3 rounded-[20px] flex div-center cursor-pointer
+    @apply hover:bg-text max-sm:hover:bg-btngradient  transition max-sm:w-full max-sm:hover:text-white max-sm:px-[4px] max-sm:py-2 max-sm:p-3 rounded-[20px] flex div-center cursor-pointer
   }
 }
 
