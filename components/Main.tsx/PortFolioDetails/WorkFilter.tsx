@@ -1,4 +1,5 @@
-import React from 'react'
+'use client'
+import {useState} from 'react'
 
 const items = [
     'All', 'NextJs', 'ReactJs', 'JavaScript', 'Design'
@@ -8,6 +9,14 @@ interface Iprop {
     fontFamily?: any;
   }
 const WorkFilter:React.FC<Iprop> = ({fontFamily}) => {
+    const [addClass, setAddClass] = useState('')
+    const [index, setIndex] = useState(-1)
+    const handleClick= (idx:number) =>{
+        setIndex(idx)
+        if (idx ==  index){
+            setAddClass('filter-active')
+        }
+    } 
   return (
     <section className='w-full flex justify-center'>
     <ul className='flex gap-8 mt-5 bg-[#F2F5F9] rounded-[50px] px-8 py-3 w-[500px] justify-center max-sm:flex-col max-sm:gap-0 div-center ' >
@@ -15,7 +24,7 @@ const WorkFilter:React.FC<Iprop> = ({fontFamily}) => {
              {
                   items.map((item,idx)=>{
                     return (
-                        <li className={`filter-span`} key={idx}>
+                        <li className={`filter-span ${fontFamily} ${addClass}`} key={idx}>
                                  {
                                     item
                                  }

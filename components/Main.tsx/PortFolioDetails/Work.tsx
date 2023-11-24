@@ -11,7 +11,7 @@ const Work:React.FC<Iprop> = ({fontFamily}) => {
         <h2 className='header-title' >Portfolio</h2>
         <div className='header-line'></div>
     </div>
-      <WorkFilter/>
+      <WorkFilter fontFamily={fontFamily}/>
       <section>
           <div>
 
