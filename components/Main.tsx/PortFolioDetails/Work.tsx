@@ -74,7 +74,7 @@ const Work:React.FC<Iprop> = ({fontFamily}) => {
         <div className='header-line'></div>
     </div>
       <WorkFilter fontFamily={fontFamily}/>
-      <section>
+      <section className='mt-5 scrollbar overflow-y-scroll'>
           <div>
 
           </div>

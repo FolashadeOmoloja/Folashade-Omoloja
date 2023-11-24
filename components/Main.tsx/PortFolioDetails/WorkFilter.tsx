@@ -2,7 +2,7 @@
 import {useState} from 'react'
 
 const items = [
-    'All', 'NextJs', 'ReactJs', 'JavaScript', 'Design'
+    'All', 'NextJs', 'ReactJs', 'JavaScript'
 ]
 
 interface Iprop {
@@ -18,7 +18,7 @@ const WorkFilter:React.FC<Iprop> = ({fontFamily}) => {
     console.log(index)
   return (
     <section className='w-full flex justify-center'>
-    <ul className='flex gap-8 mt-5 bg-[#F2F5F9] rounded-[50px] px-8 py-3 w-[500px] justify-center max-sm:flex-col max-sm:gap-0 div-center ' >
+    <ul className='flex gap-8 mt-5 bg-[#F2F5F9] rounded-[50px] px-8 py-3 w-[450px] justify-between max-sm:flex-col max-sm:gap-0 div-center ' >
 
              {
                   items.map((item,idx)=>{
