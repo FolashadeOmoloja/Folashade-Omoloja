@@ -28,6 +28,11 @@ const Work:React.FC<Iprop> = ({fontFamily}) => {
                 </span>
             </div>
       </section>
+      <section>
+          <div>
+            
+          </div>
+      </section>
 
 
     
