@@ -27,7 +27,7 @@ const Work:React.FC<Iprop> = ({fontFamily}) => {
                   Design
                 </span>
             </div>
-        </section>
+      </section>
 
 
     
