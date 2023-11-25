@@ -86,12 +86,12 @@ const Work:React.FC<Iprop> = ({fontFamily}) => {
   className={`flex flex-col items-center justify-items-center text-[#57657A] gap-4 font-semibold w-[48%]  p-3 bg-[#F2F5F9]  rounded-[15px] transition-transform shadow-div`}
   key={idx}
 >
-  <div className="w-full h-200 rounded-15 relative overflow-hidden">
+  <div className="w-full h-200 rounded-15 relative overflow-hidden portfolio__img">
     <img src={project.image} alt="" className="w-full h-[166px] rounded-[15px] border border-[#ED250A]" />
-    <div className="w-full h-full absolute top-0 left-0 rounded-15 transition-all duration-400 ease-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible bg-gradient-to-r from-[rgba(201, 97, 222, 0.6)] to-[rgba(41, 84, 163, 0.6)]">
+    <div className="overlay">
       <a
         href={project.liveDemoLink}
-        className="text-white text-3xl absolute transform -translate-x-1/2 -translate-y-1/2 opacity-0 invisible group-hover:opacity-100 group-hover:visible top-1/2 left-1/2"
+        className="overlay__link"
       >
         <GiBinoculars />
       </a>
@@ -101,7 +101,7 @@ const Work:React.FC<Iprop> = ({fontFamily}) => {
   <div className="flex justify-between w-full ">
     <a
       href={project.githubLink}
-      className=" text-sm div-center gap-1 hover:bg-text"
+      className=" text-sm div-center gap-1 "
       target="_blank"
     > 
       <BsGithub />

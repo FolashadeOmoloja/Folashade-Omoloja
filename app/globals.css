@@ -135,6 +135,38 @@ background: linear-gradient(to right, #FF9C1A, #ED250A );
     }
 
 
+    .overlay {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      border-radius: 15px;
+      transition: all 0.4s ease 0s; 
+  }
+    .overlay__link {
+      position: absolute;
+      font-size: 50px;
+      display: inline-block;
+      color: white;
+      top: 25%;
+      left: 25%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.4s ease 0s; 
+  }
+      .portfolio__img:hover .overlay {
+  
+        background:   #ed240a7e ;
+      }
+        .portfolio__img:hover .overlay__link {
+          opacity: 1;
+          visibility: visible;
+          top: 50%;
+          left: 50%; 
+      }   
+
 /* keyframes */
 
 @keyframes changeTheme{
