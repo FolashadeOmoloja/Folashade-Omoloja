@@ -50,6 +50,10 @@ html, body {
     @apply flex items-center justify-center
   }
 
+  .shadow-div{
+    @apply shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]
+  }
+
   .cta{
     @apply text-white font-semibold w-[200px] h-[50px] rounded-[30px] text-sm btn div-center gap-2
   }
