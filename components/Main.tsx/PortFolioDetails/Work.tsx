@@ -1,5 +1,7 @@
 import React from 'react'
 import WorkFilter from './WorkFilter';
+import { BsGithub, BsLink45Deg } from 'react-icons/bs';
+import { GiBinoculars } from 'react-icons/gi';
 
 const projects = [
   {
@@ -68,16 +70,56 @@ interface Iprop {
 }
 const Work:React.FC<Iprop> = ({fontFamily}) => {
   return (
-    <section className="px-[62px] max-xlg:px-[20px]">
-    <div className={`${fontFamily} flex items-center gap-8 mb-4  max-md:flex-col max-md:items-start max-md:gap-1`}>
+    <section className="">
+    <div className={`${fontFamily} flex items-center gap-8 mb-4  max-md:flex-col max-md:items-start max-md:gap-1 px-[62px] max-xlg:px-[20px]`}>
         <h2 className='header-title' >Portfolio</h2>
         <div className='header-line'></div>
     </div>
+      <section className='px-[62px] max-xlg:px-[20px]'>
       <WorkFilter fontFamily={fontFamily}/>
-      <section className='mt-5 scrollbar overflow-y-scroll'>
-          <div>
+      </section>
+      <section className='mt-5 scrollbar overflow-y-scroll pl-[62px] pr-[52px] mr-[10px] max-xlg:pl-[20px] max-xlg:pr-[10px] flex flex-wrap flex-grow gap-4'>
+            {
+              projects.map((project,idx)=>{
+                return(
+<article
+  className={`flex flex-col items-center justify-items-center text-center gap-4 font-semibold w-[48%]  p-3 bg-[#F2F5F9]  rounded-[15px] transition-transform shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]`}
+  key={idx}
+>
+  <div className="w-full h-200 rounded-15 relative overflow-hidden">
+    <img src={project.image} alt="" className="w-full h-full rounded-15" />
+    <div className="w-full h-full absolute top-0 left-0 rounded-15 transition-all duration-400 ease-0 opacity-0 invisible group-hover:opacity-100 group-hover:visible bg-gradient-to-r from-[rgba(201, 97, 222, 0.6)] to-[rgba(41, 84, 163, 0.6)]">
+      <a
+        href={project.liveDemoLink}
+        className="text-white text-3xl absolute transform -translate-x-1/2 -translate-y-1/2 opacity-0 invisible group-hover:opacity-100 group-hover:visible top-1/2 left-1/2"
+      >
+        <GiBinoculars />
+      </a>
+    </div>
+  </div>
+  <h3>{project.title}</h3>
+  <div className="flex">
+    <a
+      href={project.githubLink}
+      className="btn btn-1 btn-6 btn-6a text-white bg-gradient-to-r from-[rgba(201,97,222,0.8)] via-transparent to-[rgba(201,97,222,0.8)] border-transparent border-r-0 rounded-7 text-13px"
+      target="_blank"
+    >
+      <span>Github</span> <BsGithub />
+    </a>
+    <a
+      href={project.liveDemoLink}
+      className="btn btn-2 btn-6 btn-6b text-white bg-gradient-to-r from-[rgba(41,84,163,0.8)] via-transparent to-[rgba(41,84,163,0.8)] border-transparent rounded-r-7 text-13px"
+      target="_blank"
+    >
+      <span>Live Demo </span>
+      <BsLink45Deg />
+    </a>
+  </div>
+</article>
 
-          </div>
+                )
+              })
+            }
       </section>
 
 
