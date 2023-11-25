@@ -10,7 +10,7 @@ interface Iprop {
   }
 const WorkFilter:React.FC<Iprop> = ({fontFamily}) => {
     const [addClass, setAddClass] = useState(false)
-    const [index, setIndex] = useState(-1)
+    const [index, setIndex] = useState(0)
     const handleClick= (idx:number) =>{
         setIndex(idx)
 

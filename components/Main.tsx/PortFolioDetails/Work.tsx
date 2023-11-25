@@ -78,12 +78,12 @@ const Work:React.FC<Iprop> = ({fontFamily}) => {
       <section className='px-[62px] max-xlg:px-[20px]'>
       <WorkFilter fontFamily={fontFamily}/>
       </section>
-      <section className='mt-5 scrollbar overflow-y-scroll pl-[62px] pr-[52px] mr-[10px] max-xlg:pl-[20px] max-xlg:pr-[10px] flex flex-wrap flex-grow gap-4 h-[500px]'>
+      <section className='mt-5 scrollbar overflow-y-scroll pl-[62px] pr-[52px] mr-[10px] max-xlg:pl-[20px] max-xlg:pr-[10px] flex flex-wrap flex-grow gap-4 h-[480px]'>
             {
               projects.map((project,idx)=>{
                 return(
 <article
-  className={`flex flex-col items-center justify-items-center text-center gap-4 font-semibold w-[48%]  p-3 bg-[#F2F5F9]  rounded-[15px] transition-transform shadow-div`}
+  className={`flex flex-col items-center justify-items-center text-[#57657A] gap-4 font-semibold w-[48%]  p-3 bg-[#F2F5F9]  rounded-[15px] transition-transform shadow-div`}
   key={idx}
 >
   <div className="w-full h-200 rounded-15 relative overflow-hidden">
@@ -101,7 +101,7 @@ const Work:React.FC<Iprop> = ({fontFamily}) => {
   <div className="flex justify-between w-full ">
     <a
       href={project.githubLink}
-      className=" text-sm div-center gap-1 "
+      className=" text-sm div-center gap-1 hover:bg-text"
       target="_blank"
     > 
       <BsGithub />
@@ -109,10 +109,10 @@ const Work:React.FC<Iprop> = ({fontFamily}) => {
     </a>
     <a
       href={project.liveDemoLink}
-      className="text-sm div-center gap-1"
+      className="text-sm div-center gap-1 bg-text"
       target="_blank"
     >
-            <BsLink45Deg />
+            <BsLink45Deg className='text-[#ED250A]'/>
       <span>Live Demo </span>
 
     </a>
