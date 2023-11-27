@@ -23,7 +23,7 @@ const projects = [
 
   {
     title: 'Planet Protectors',
-    image: 'planet.PNG',
+    image: 'planet.png',
     githubLink: 'https://github.com/FolashadeOmoloja/Planet-Protectors',
     liveDemoLink: 'https://planetprotectors.netlify.app/home',
     description: 'A responsive web application built with React.js, Bootstrap, and React Table for a user-friendly interface and enhance functionality. It addresses the problem of plastic recycling.',
