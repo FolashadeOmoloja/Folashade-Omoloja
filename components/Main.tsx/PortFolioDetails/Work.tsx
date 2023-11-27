@@ -31,7 +31,7 @@ const projects = [
   },
   {
     title: 'Planet Protectors',
-    image: 'planet.PNG',
+    image: 'portfolio.PNG',
     githubLink: 'https://github.com/FolashadeOmoloja/Planet-Protectors',
     liveDemoLink: 'https://planetprotectors.netlify.app/home',
     description: 'A responsive web application built with React.js, Bootstrap, and React Table for a user-friendly interface and enhance functionality. It addresses the problem of plastic recycling.',
@@ -48,7 +48,7 @@ const projects = [
   },
   {
     title: 'Notelify',
-    image: 'Readym.PNG',
+    image: 'notelify.png',
     githubLink: 'https://github.com/FolashadeOmoloja/Notelify',
     liveDemoLink: 'https://notelifyweb.netlify.app/',
     description: 'Notefily is a responsive functional web application built to help users store notes and create todo-lists, Tech stack: Html, CSS, Javascript.',
