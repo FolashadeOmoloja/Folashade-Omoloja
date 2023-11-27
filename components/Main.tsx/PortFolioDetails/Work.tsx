@@ -78,7 +78,7 @@ const Work:React.FC<Iprop> = ({fontFamily}) => {
       <section className='px-[62px] max-xlg:px-[20px]'>
       <WorkFilter fontFamily={fontFamily}/>
       </section>
-      <section className='mt-5 scrollbar overflow-y-scroll pl-[62px] pr-[52px] mr-[10px] max-xlg:pl-[20px] max-xlg:pr-[10px] flex flex-wrap flex-grow gap-4 h-[480px]'>
+      <section className='mt-5 scrollbar overflow-y-scroll pl-[62px] pr-[52px] mr-[10px] max-xlg:pl-[20px] max-xlg:pr-[10px] flex flex-wrap flex-grow gap-4 h-[480px] last:mb-4'>
             {
               projects.map((project,idx)=>{
                 return(
