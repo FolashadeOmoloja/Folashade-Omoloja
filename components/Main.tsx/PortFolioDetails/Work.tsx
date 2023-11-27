@@ -92,6 +92,7 @@ const Work:React.FC<Iprop> = ({fontFamily}) => {
       <a
         href={project.liveDemoLink}
         className="overlay__link"
+        target="_blank"
       >
         <GiBinoculars />
       </a>
