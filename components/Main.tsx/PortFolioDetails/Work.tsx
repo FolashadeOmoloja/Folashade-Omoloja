@@ -32,7 +32,7 @@ const projects = [
   {
     title: 'My Old Portfolio',
     image: 'portfolio.PNG',
-    githubLink: 'https://github.com/FolashadeOmoloja/Planet-Protectors',
+    githubLink: 'https://github.com/FolashadeOmoloja/My-portfolio',
     liveDemoLink: 'https://folashade-omoloja.netlify.app/',
     description: 'A responsive portfolio with React.js, email.js, css. Showcasing all my previous projects and a really beautiful user interface',
     filterIdx: 0.6
