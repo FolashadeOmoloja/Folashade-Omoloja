@@ -76,6 +76,16 @@ const Work:React.FC<Iprop> = ({fontFamily}) => {
   const reactArr = projects.filter((project) => project.filterIdx == 2)
 const javascriptArr=projects.filter((project) => project.filterIdx == 3)
 const [projectArr, setProjectArr] =useState(projects)
+const [filteredProjects, setFilteredProjects] = useState(projects);
+
+const handleFilter = (filterIdx: number) => {
+  if (filterIdx === 0) {
+    setFilteredProjects(projects);
+  } else {
+    const filteredArr = projects.filter((project) => project.filterIdx === filterIdx);
+    setFilteredProjects(filteredArr);
+  }
+};
 
 
 
@@ -87,16 +97,13 @@ const [projectArr, setProjectArr] =useState(projects)
     </div>
       <section className='px-[62px] max-xlg:px-[20px]'>
       <WorkFilter fontFamily={fontFamily} 
-      nextArr={nextArr } 
-      allArr={projects }
-      javascriptArr={javascriptArr}
-      reactArr={reactArr}
+      handleFilter={handleFilter}
       propUseState={setProjectArr}
       />
       </section>
       <section className='mt-5 scrollbar sm:overflow-y-scroll pl-[62px] pr-[52px] mr-[10px] max-xlg:pl-[20px] max-xlg:pr-[10px] flex flex-wrap flex-grow gap-4 sm:h-[480px]  max-sm:justify-center '>
             {
-              projectArr.map((project,idx)=>{
+              filteredProjects.map((project,idx)=>{
                 return(
          <article
            className={`flex flex-col items-center justify-items-center text-[#57657A] gap-4 font-semibold w-[48%] h-[266px]  p-3 bg-[#F2F5F9]  rounded-[15px] transition-transform shadow-div max-sm:w-[300px]`}

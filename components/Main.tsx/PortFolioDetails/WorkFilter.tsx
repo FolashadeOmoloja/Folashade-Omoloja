@@ -6,27 +6,16 @@ const items = [
 
 interface Iprop {
     fontFamily?: any;
-    allArr?:{ title: string; image: string; githubLink: string; liveDemoLink: string; description: string; filterIdx: number; }[];
-    reactArr?:{ title: string; image: string; githubLink: string; liveDemoLink: string; description: string; filterIdx: number; }[];
-    nextArr?:{ title: string; image: string; githubLink: string; liveDemoLink: string; description: string; filterIdx: number; }[];
-    javascriptArr?:{ title: string; image: string; githubLink: string; liveDemoLink: string; description: string; filterIdx: number; }[];
     propUseState?: (value: { title: string; image: string; githubLink: string; liveDemoLink: string; description: string; filterIdx: number; }[]) => void;  
+    handleFilter?: (param:number) => void;
   }
-const WorkFilter:React.FC<Iprop> = ({fontFamily, propUseState,allArr,reactArr,nextArr,javascriptArr}) => {
+const WorkFilter:React.FC<Iprop> = ({fontFamily, propUseState, handleFilter}) => {
     const [index, setIndex] = useState(0)
     
     const handleClick= (idx:number) =>{
         setIndex(idx)
-        if(propUseState){
-          if(idx===0){
-             allArr?propUseState(allArr):null
-          } else if(idx===1){
-            nextArr?propUseState(nextArr):null
-         } else if(idx===2){
-          reactArr?propUseState(reactArr):null
-         } else if(idx===3){
-        javascriptArr?propUseState(javascriptArr):null
-        }
+        if(propUseState && handleFilter){
+                handleFilter(idx)
         }
 
     } 
