@@ -30,11 +30,11 @@ const projects = [
     filterIdx: 0.6
   },
   {
-    title: 'Planet Protectors',
+    title: 'My Old Portfolio',
     image: 'portfolio.PNG',
     githubLink: 'https://github.com/FolashadeOmoloja/Planet-Protectors',
-    liveDemoLink: 'https://planetprotectors.netlify.app/home',
-    description: 'A responsive web application built with React.js, Bootstrap, and React Table for a user-friendly interface and enhance functionality. It addresses the problem of plastic recycling.',
+    liveDemoLink: 'https://folashade-omoloja.netlify.app/',
+    description: 'A responsive portfolio with React.js, email.js, css. Showcasing all my previous projects and a really beautiful user interface',
     filterIdx: 0.6
   },
 
