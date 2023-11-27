@@ -101,12 +101,12 @@ const handleFilter = (filterIdx: number) => {
       propUseState={setProjectArr}
       />
       </section>
-      <section className='mt-5 scrollbar sm:overflow-y-scroll pl-[62px] pr-[52px] mr-[10px] max-xlg:pl-[20px] max-xlg:pr-[10px] flex flex-wrap flex-grow gap-4 sm:h-[480px]  max-sm:justify-center '>
+      <section className='mt-5 scrollbar sm:overflow-y-scroll pl-[62px] pr-[52px] mr-[10px] max-xlg:pl-[20px] max-xlg:pr-[10px] flex flex-wrap flex-grow gap-4 sm:h-[480px]  2xl:justify-center max-sm:justify-center '>
             {
               filteredProjects.map((project,idx)=>{
                 return(
          <article
-           className={`flex flex-col items-center justify-items-center text-[#57657A] gap-4 font-semibold w-[48%] h-[266px]  p-3 bg-[#F2F5F9]  rounded-[15px] transition-transform shadow-div max-sm:w-[300px]`}
+           className={`flex flex-col items-center justify-items-center text-[#57657A] gap-4 font-semibold w-[48%] h-[266px] 2xl:max-w-[300px] p-3 bg-[#F2F5F9]  rounded-[15px] transition-transform shadow-div max-sm:w-[300px]`}
            key={idx}
          >
            <div className="w-full h-200 rounded-15 relative overflow-hidden portfolio__img">
