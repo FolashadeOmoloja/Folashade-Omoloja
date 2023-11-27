@@ -1,4 +1,5 @@
-import React from 'react'
+'use client'
+import { useState } from 'react';
 import WorkFilter from './WorkFilter';
 import { BsGithub, BsLink45Deg } from 'react-icons/bs';
 import { GiBinoculars } from 'react-icons/gi';
@@ -65,14 +66,19 @@ const projects = [
 
 ];
 
-const reactArr = []
-const nextArr =[]
-const javascripArr=[]
+
 
 interface Iprop {
   fontFamily?: any;
 }
 const Work:React.FC<Iprop> = ({fontFamily}) => {
+  const nextArr =projects.filter((project) => project.filterIdx == 1)
+  const reactArr = projects.filter((project) => project.filterIdx == 2)
+const javascriptArr=projects.filter((project) => project.filterIdx == 3)
+const [projectArr, setProjectArr] =useState(projects)
+
+
+
   return (
     <section className="">
     <div className={`${fontFamily} flex items-center gap-8 mb-4  max-md:flex-col max-md:items-start max-md:gap-1 px-[62px] max-xlg:px-[20px]`}>
@@ -80,49 +86,55 @@ const Work:React.FC<Iprop> = ({fontFamily}) => {
         <div className='header-line'></div>
     </div>
       <section className='px-[62px] max-xlg:px-[20px]'>
-      <WorkFilter fontFamily={fontFamily}/>
+      <WorkFilter fontFamily={fontFamily} 
+      nextArr={nextArr } 
+      allArr={projects }
+      javascriptArr={javascriptArr}
+      reactArr={reactArr}
+      propUseState={setProjectArr}
+      />
       </section>
       <section className='mt-5 scrollbar sm:overflow-y-scroll pl-[62px] pr-[52px] mr-[10px] max-xlg:pl-[20px] max-xlg:pr-[10px] flex flex-wrap flex-grow gap-4 sm:h-[480px]  max-sm:justify-center '>
             {
-              projects.map((project,idx)=>{
+              projectArr.map((project,idx)=>{
                 return(
-<article
-  className={`flex flex-col items-center justify-items-center text-[#57657A] gap-4 font-semibold w-[48%]  p-3 bg-[#F2F5F9]  rounded-[15px] transition-transform shadow-div max-sm:w-[300px]`}
-  key={idx}
->
-  <div className="w-full h-200 rounded-15 relative overflow-hidden portfolio__img">
-    <img src={project.image} alt="" className="w-full h-[166px] rounded-[15px] border border-[#ED250A]" />
-    <div className="overlay">
-      <a
-        href={project.liveDemoLink}
-        className="overlay__link"
-        target="_blank"
-      >
-        <GiBinoculars />
-      </a>
-    </div>
-  </div>
-  <h3>{project.title}</h3>
-  <div className="flex justify-between w-full ">
-    <a
-      href={project.githubLink}
-      className=" text-sm div-center gap-1 "
-      target="_blank"
-    > 
-      <BsGithub />
-      <span>Github</span> 
-    </a>
-    <a
-      href={project.liveDemoLink}
-      className="text-sm div-center gap-1 bg-text"
-      target="_blank"
-    >
-            <BsLink45Deg className='text-[#ED250A]'/>
-      <span>Live Demo </span>
-
-    </a>
-  </div>
-</article>
+         <article
+           className={`flex flex-col items-center justify-items-center text-[#57657A] gap-4 font-semibold w-[48%] h-[266px]  p-3 bg-[#F2F5F9]  rounded-[15px] transition-transform shadow-div max-sm:w-[300px]`}
+           key={idx}
+         >
+           <div className="w-full h-200 rounded-15 relative overflow-hidden portfolio__img">
+             <img src={project.image} alt="" className="w-full h-[166px] rounded-[15px] border border-[#ED250A]" />
+             <div className="overlay">
+               <a
+                 href={project.liveDemoLink}
+                 className="overlay__link"
+                 target="_blank"
+               >
+                 <GiBinoculars />
+               </a>
+             </div>
+           </div>
+           <h3>{project.title}</h3>
+           <div className="flex justify-between w-full ">
+             <a
+               href={project.githubLink}
+               className=" text-sm div-center gap-1 "
+               target="_blank"
+             > 
+               <BsGithub />
+               <span>Github</span> 
+             </a>
+             <a
+               href={project.liveDemoLink}
+               className="text-sm div-center gap-1 bg-text"
+               target="_blank"
+             >
+                     <BsLink45Deg className='text-[#ED250A]'/>
+               <span>Live Demo </span>
+         
+             </a>
+           </div>
+         </article>
 
                 )
               })
