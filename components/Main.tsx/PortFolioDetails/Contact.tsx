@@ -53,7 +53,7 @@ const Contact:React.FC<Iprop> = ({fontFamily}) => {
         <div className="flex gap-1 max-lg:my-5">
            <div className="relative bg-white rounded-lg border border-gray-300 shadow-md p-4 max-w-lg mx-auto">
             <div className="absolute top-0 -mt-3 w-6 h-6 transform rotate-45 bg-white border border-gray-300"></div>
-            <p className="text-gray-700 text-sm leading-tight max-xxsm:text-center">
+            <p className="text-gray-700 text-sm leading-tight max-xxsm:text-center typewriter">
              Let's transform your business ideas into captivating online experiences 
              </p>
           </div>

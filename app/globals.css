@@ -169,7 +169,30 @@ background: linear-gradient(to right, #FF9C1A, #ED250A );
           visibility: visible;
           top: 50%;
           left: 50%; 
-      }   
+      } 
+      
+      .typewriter{
+        overflow: hidden; 
+        border-right: .15em solid #FF9C1A; 
+        white-space: nowrap; 
+        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+   
+        animation:
+          typing 3.5s steps(40, end) ,
+          blink-caret .75s step-end infinite;
+      }
+      
+      /* The typing effect */
+      @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+      }
+      
+      /* The typewriter cursor effect */
+      @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: #FF9C1A; }
+      }
 
 /* keyframes */
 
