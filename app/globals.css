@@ -237,7 +237,7 @@ background: linear-gradient(to right, #FF9C1A, #ED250A );
 
 
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
 
   }

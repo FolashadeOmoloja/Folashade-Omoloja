@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { useTheme } from 'next-themes';
 
 
 const ToggleThemeButton = () => {
@@ -9,6 +10,16 @@ const ToggleThemeButton = () => {
     const [toggleTheme, setToggleTheme] = useState(true);
     const [bg, setBg] = useState(true);
     const [buttonDisabled, setButtonDisabled] = useState(false);
+
+
+    
+    const { theme, setTheme } = useTheme();
+
+    const toggleThemeFunc = () => {
+        setTheme(theme === "light" ? "dark" : "light");
+    };
+
+    const isActive = theme === "light";
   
     const changeTheme = () => {
       setButtonDisabled(true);
@@ -38,7 +49,7 @@ const ToggleThemeButton = () => {
         className={`w-14 h-14 max-xxsm:w-12 max-xxsm:h-12 flex items-center justify-center rounded-full relative shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] ${
           bg ? 'bg-[#fbffc286]' : 'bg-[#EBF2FA]'
         }`}
-        onClick={changeTheme}
+        onClick={()=>{changeTheme(); toggleThemeFunc()}}
         disabled={buttonDisabled}
       >
         <div className={`w-6 h-6 ${toggleTheme ? (suntheme ? 'changeThemeBtn' : '') : (darkTheme ? 'changeDarkThemeBtn' : '')}`}>
