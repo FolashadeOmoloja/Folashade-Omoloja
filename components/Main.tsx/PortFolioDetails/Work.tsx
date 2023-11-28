@@ -106,7 +106,7 @@ const handleFilter = (filterIdx: number) => {
               filteredProjects.map((project,idx)=>{
                 return(
          <article
-           className={`flex flex-col items-center justify-items-center text-[#57657A] gap-4 font-semibold w-[48%] h-[266px] 2xl:max-w-[300px] p-3 bg-[#F2F5F9]  rounded-[15px] transition-transform shadow-div max-sm:w-[300px]`}
+           className={`flex flex-col items-center justify-items-center text-[#57657A] dark:text-white gap-4 font-semibold w-[48%] h-[266px] 2xl:max-w-[300px] p-3 bg-[#F2F5F9] dark:bg-[#808080] rounded-[15px] transition-transform shadow-div max-sm:w-[300px]`}
            key={idx}
          >
            <div className="w-full h-200 rounded-15 relative overflow-hidden portfolio__img">
@@ -133,7 +133,7 @@ const handleFilter = (filterIdx: number) => {
              </a>
              <a
                href={project.liveDemoLink}
-               className="text-sm div-center gap-1 bg-text"
+               className="text-sm div-center gap-1 bg-text dark:text-[#ED250A]"
                target="_blank"
              >
                      <BsLink45Deg className='text-[#ED250A]'/>

@@ -50,7 +50,7 @@ const Resume:React.FC<Iprop> = ({fontFamily}) => {
                         experience.map((item,idx)=>{
                           return(
                             <div className="resume-box " key={idx}>
-                              <span className="text-[#1A1003]">{item.date}</span>
+                              <span className="text-[#1A1003] dark:text-[#d3d3d3]">{item.date}</span>
                               <span className="font-semibold">{item.company}</span>
                               <p>{item.description}</p>
                             </div>
@@ -66,7 +66,7 @@ const Resume:React.FC<Iprop> = ({fontFamily}) => {
                         education.map((item,idx)=>{
                           return(
                             <div className="resume-box" key={idx}>
-                              <span className="text-[#1A1003]">{item.date}</span>
+                              <span className="text-[#1A1003] dark:text-[#d3d3d3]">{item.date}</span>
                               <span className="font-semibold">{item.company}</span>
                               <p>{item.description}</p>
                             </div>

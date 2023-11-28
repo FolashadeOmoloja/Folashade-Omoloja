@@ -53,7 +53,7 @@ const ToggleThemeButton = () => {
         onClick={()=>{changeTheme()}}
         disabled={buttonDisabled}
       >
-        <div className={`w-6 h-6 ${toggleTheme ? (suntheme && isActive ? 'changeThemeBtn' : '') : (darkTheme && !isActive ? 'changeDarkThemeBtn' : '')}`}>
+        <div className={`w-6 h-6 ${toggleTheme ? (suntheme ? 'changeThemeBtn' : '') : (darkTheme ? 'changeDarkThemeBtn' : '')}`}>
           {toggleTheme ? (
             <img src="sun.png" alt="" className="w-full h-full" />
           ) : (

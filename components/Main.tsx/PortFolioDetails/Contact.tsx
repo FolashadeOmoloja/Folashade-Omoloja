@@ -60,7 +60,7 @@ const Contact:React.FC<Iprop> = ({fontFamily}) => {
         </div>
 
       <div
-        className='relative gap-6 bg-[#ed240a38] max-xsm:bg-transparent max-xxsm:px-5 max-xsm:px-0 rounded-[20px] p-8'
+        className='relative gap-6 bg-[#ed240a38] dark:bg-[#3c2f41] max-xsm:bg-transparent max-xxsm:px-5 max-xsm:px-0 rounded-[20px] p-8'
       >
         <img src='girl.svg' alt='' className='absolute top-[-90px] left-[-10px] w-[75px] h-[146px] max-md:hidden' />
        

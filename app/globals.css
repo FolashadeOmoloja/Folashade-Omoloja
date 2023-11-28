@@ -73,17 +73,17 @@ html, body {
     @apply w-[290px] h-[135px] bg-[#ed240a4b] rounded-[20px] shadow-[5px_5px_0px_0px_#ff9c1ab9] p-[10px] text-sm flex flex-col gap-[2px] max-lg:w-full max-lg:justify-between max-lg:p-5 max-xxsm:h-[170px] max-xsm:h-full
   }
   .skills{
-    @apply bg-[#E1E8EF] text-[12px] p-2 rounded-lg cursor-pointer hover:bg-btngradient hover:text-white font-semibold transition-all
+    @apply bg-[#E1E8EF] dark:bg-[#3c2f41] text-[12px] p-2 rounded-lg cursor-pointer hover:bg-btngradient hover:text-white font-semibold transition-all
   }
   .form-input{
-    @apply w-full p-4 outline-none border-[#ed240a85] rounded-lg border bg-white text-sm
+    @apply w-full p-4 outline-none border-[#ed240a85] rounded-lg border bg-white text-sm dark:bg-[#c9c8c8] dark:border-transparent dark:text-black dark:placeholder:text-black 
   }
   .filter-span{
-    @apply   transition max-sm:w-full  max-sm:px-[4px] max-sm:py-2 max-sm:p-3 rounded-[20px] flex div-center cursor-pointer text-[#57657A] text-sm
+    @apply   transition max-sm:w-full  max-sm:px-[4px] max-sm:py-2 max-sm:p-3 rounded-[20px] flex div-center cursor-pointer text-[#57657A] dark:text-white text-sm
   }
 
   .filter-active, .filter-span:hover{
-    @apply sm:bg-text font-[600]  max-sm:bg-btngradient max-sm:text-white 
+    @apply sm:bg-text font-[600]  max-sm:bg-btngradient max-sm:text-white dark:sm:text-[#ED250A]
   }
  
 }

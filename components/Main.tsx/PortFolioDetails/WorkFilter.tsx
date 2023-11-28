@@ -22,7 +22,7 @@ const WorkFilter:React.FC<Iprop> = ({fontFamily, propUseState, handleFilter}) =>
  
   return (
     <section className='w-full flex justify-center'>
-    <ul className='flex gap-8 mt-5 bg-[#F2F5F9] rounded-[50px] px-8 py-3 w-[450px] justify-between max-sm:flex-col max-sm:gap-0 div-center max-sm:rounded-[20px]' >
+    <ul className='flex gap-8 mt-5 bg-[#F2F5F9] dark:bg-[#808080] rounded-[50px] px-8 py-3 w-[450px] justify-between max-sm:flex-col max-sm:gap-0 div-center max-sm:rounded-[20px]' >
 
              {
                   items.map((item,idx)=>{
