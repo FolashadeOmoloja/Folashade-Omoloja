@@ -33,18 +33,18 @@ const contactInfo = [
         link: 'omolojashade@gmail.com'
     },
 ]
-
+// for the text, such as #d3d3d3, #a9a9a9, or #808080
 const SideBarDetails = () => {
   return (
-    <section className='h-full w-full bg-white dark:bg-[#221d27] dark:text-white px-6 max-xxsm:px-4 pt-[90px] rounded-[20px]  text-center pb-[60px] relative top-[-75px]'>
+    <section className='h-full w-full bg-white dark:bg-[#221d27]  px-6 max-xxsm:px-4 pt-[90px] rounded-[20px]  text-center pb-[60px] relative top-[-75px]'>
         <h1 className='font-bold text-[24px] '>Folashade Omoloja</h1>
-        <span className='mt-6 font-semibold text-[#0b090996]'>Front End Developer</span>
+        <span className='mt-6 font-semibold text-[#0b090996] dark:text-[#d3d3d3]'>Front End Developer</span>
         <section className='flex mt-7 gap-2 justify-center'>
              {
                 socialIcons.map((item, idx)=>{
                     return (
                         <a href={item.href} target="_blank" key={idx}>
-                        <div  className='w-[70px] h-[70px] max-xxsm:w-[55px] max-xxsm:h-[55px] bg-[#F2F7FC] div-center  rounded-lg'>
+                        <div  className='w-[70px] h-[70px] max-xxsm:w-[55px] max-xxsm:h-[55px] bg-[#F2F7FC] div-center  rounded-lg dark:bg-[#c9c8c8]'>
                             <img src={item.icon} alt={item.icon} className='w-5' />
                        </div>
                        </a>
@@ -52,7 +52,7 @@ const SideBarDetails = () => {
                 })
              }
         </section>
-        <section className='mt-6 bg-[#F2F5F9]  rounded-[20px] py-[33px] max-xxsm:bg-transparent'>
+        <section className='mt-6 bg-[#F2F5F9] dark:bg-[#3c2f41] rounded-[20px] py-[33px] max-xxsm:bg-transparent'>
             {
                 contactInfo.map((item, idx)=>{
                     return(
@@ -60,7 +60,7 @@ const SideBarDetails = () => {
                         <div  className='flex gap-3 items-center h-[63px] w-full mb-[18px] text-left max-lg:justify-center max-sm:justify-start'>
                              <img src={item.src} alt="" />
                              <div className='flex flex-col max-xlg:text-[14px]'>
-                                <span className='text-[#0b090996]'>{item.title}</span>
+                                <span className='text-[#0b090996] dark:text-[#d3d3d3]'>{item.title}</span>
                                 <span className='font-semibold'>{item.link}</span>
                              </div>
    

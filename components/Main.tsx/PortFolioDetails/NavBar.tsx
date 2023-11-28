@@ -56,14 +56,14 @@ const NavBar:React.FC<Iprop> = ({propUseState}) => {
 
      {
         showNav? (
-            <ul className=" h-[100px] w-[500px] max-md:w-full rounded-[20px] gap-[40px] max-md:gap-5 max-xsm:gap-3 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] div-center cursor-pointer">
+            <ul className=" h-[100px] w-[500px] max-md:w-full rounded-[20px] gap-[40px] max-md:gap-5 max-xsm:gap-3 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] dark:bg-[#221d27] div-center cursor-pointer">
             {
                 navItem.map((item, idx)=>{
                     return(
                         <li key={idx} className={`nav-class nav-item ${idx === active?'nav-active': ''}`} 
                         onClick={() => handleClick(idx)}
                         >
-                          <span className="text-[24px] text-[#1A1003] nav-icon max-md:text-lg max-xsm:text-base">{item.icon}</span>
+                          <span className="text-[24px] text-[#1A1003] dark:text-white nav-icon max-md:text-lg max-xsm:text-base">{item.icon}</span>
                           <span className="text-sm max-sm:text-xs">{item.title}</span>
                         </li>
                     )

@@ -19,7 +19,7 @@ const PortfolioDetails = () => {
   return (
     <section className=''>
        <NavBar propUseState={setDisplay}/>
-       <section className='bg-white h-[687px] max-lg:h-full w-full mt-3 rounded-[20px]  py-8'>
+       <section className='bg-white dark:bg-[#221d27] h-[687px] max-lg:h-full w-full mt-3 rounded-[20px]  py-8'>
              {
               display === 'Home'?(
                 <About fontFamily={poppins.className} />

@@ -63,7 +63,7 @@ html, body {
   }
 
   .nav-class{
-    @apply bg-[#E1E8EF] w-[80px] h-[80px] max-sm:w-[60px] max-sm:h-[60px] max-xsm:h-[50px] max-xsm:w-[50px] max-sm:rounded-[10px] max-xsm:rounded-[4px] rounded-[20px] flex-col gap-1 div-center
+    @apply bg-[#E1E8EF] dark:bg-[#808080] w-[80px] h-[80px] max-sm:w-[60px] max-sm:h-[60px] max-xsm:h-[50px] max-xsm:w-[50px] max-sm:rounded-[10px] max-xsm:rounded-[4px] rounded-[20px] flex-col gap-1 div-center
   }
 
   .h3-header{
