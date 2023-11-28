@@ -36,7 +36,7 @@ const contactInfo = [
 
 const SideBarDetails = () => {
   return (
-    <section className='h-full w-full bg-white px-6 max-xxsm:px-4 pt-[90px] rounded-[20px]  text-center pb-[60px] relative top-[-75px]'>
+    <section className='h-full w-full bg-white dark:bg-[#221d27] dark:text-white px-6 max-xxsm:px-4 pt-[90px] rounded-[20px]  text-center pb-[60px] relative top-[-75px]'>
         <h1 className='font-bold text-[24px] '>Folashade Omoloja</h1>
         <span className='mt-6 font-semibold text-[#0b090996]'>Front End Developer</span>
         <section className='flex mt-7 gap-2 justify-center'>

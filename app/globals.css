@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+  transition: background 200ms ease-in-out;
+}
+
 html, body {
   scroll-behavior: smooth;
 }
