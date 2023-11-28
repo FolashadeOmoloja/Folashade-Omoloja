@@ -37,6 +37,7 @@ const ToggleThemeButton = () => {
         setToggleTheme(!toggleTheme);
         setBg(!bg);
         setButtonDisabled(false);
+        toggleThemeFunc()
       }, 2000);
   
 
@@ -49,7 +50,7 @@ const ToggleThemeButton = () => {
         className={`w-14 h-14 max-xxsm:w-12 max-xxsm:h-12 flex items-center justify-center rounded-full relative shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] ${
           bg ? 'bg-[#fbffc286]' : 'bg-[#EBF2FA]'
         }`}
-        onClick={()=>{changeTheme(); toggleThemeFunc()}}
+        onClick={()=>{changeTheme()}}
         disabled={buttonDisabled}
       >
         <div className={`w-6 h-6 ${toggleTheme ? (suntheme ? 'changeThemeBtn' : '') : (darkTheme ? 'changeDarkThemeBtn' : '')}`}>
