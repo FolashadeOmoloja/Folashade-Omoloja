@@ -52,7 +52,7 @@ const SideBarDetails = () => {
                 })
              }
         </section>
-        <section className='mt-6 bg-[#F2F5F9] dark:bg-[#3c2f41] rounded-[20px] py-[33px] max-xxsm:bg-transparent'>
+        <section className='mt-6 bg-[#F2F5F9] dark:bg-[#3c2f41] rounded-[20px] py-[33px] max-xxsm:bg-transparent dark:max-xxsm:bg-transparent'>
             {
                 contactInfo.map((item, idx)=>{
                     return(
