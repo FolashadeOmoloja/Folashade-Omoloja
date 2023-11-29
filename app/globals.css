@@ -171,15 +171,29 @@ background: linear-gradient(to right, #FF9C1A, #ED250A );
           left: 50%; 
       } 
       
-      .typewriter{
+      .typewriter, .typewriter2, .typewriter3{
         overflow: hidden; 
         border-right: .15em solid #FF9C1A; 
         white-space: nowrap; 
         margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-   
+      }
+
+      .typewriter{
         animation:
           typing 3.5s steps(40, end) ,
           blink-caret .75s step-end infinite;
+      }
+
+      .typewriter2{
+        animation:
+        typing 3.5s steps(40, end) ,
+        blink-caret2 .75s step-end  forwards;
+      }
+
+      .typewriter3{
+        animation:
+        typing2 7s steps(40, end) ,
+        blink-caret .75s step-end infinite;
       }
       
       /* The typing effect */
@@ -187,12 +201,37 @@ background: linear-gradient(to right, #FF9C1A, #ED250A );
         from { width: 0 }
         to { width: 100% }
       }
+
+      @keyframes typing2 {
+        0%, 25%{
+        width: 0; display: none; 
+    
+        }
+
+        50%{
+         width: 0; display: block;
+        }
+
+        100%{
+          width: 100%; display: block;  
+        }
+     }
       
       /* The typewriter cursor effect */
       @keyframes blink-caret {
         from, to { border-color: transparent }
         50% { border-color: #FF9C1A; }
       }
+
+      @keyframes blink-caret2 {
+        from, to { border-color: transparent }
+        50%, 75% { border-color: #FF9C1A; }
+        100%{
+          border-color: transparent
+        }
+      }
+
+      
 
 /* keyframes */
 
@@ -270,6 +309,3 @@ background: linear-gradient(to right, #FF9C1A, #ED250A );
   }
 }
 
-body {
-
-}

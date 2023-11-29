@@ -51,14 +51,17 @@ const Contact:React.FC<Iprop> = ({fontFamily}) => {
             <div className='header-line'></div>
         </div>
         <div className="flex gap-1 max-lg:my-5">
-           <div className="relative bg-white rounded-lg border border-gray-300 shadow-md p-4 max-w-lg mx-auto">
+           <div className="relative bg-white rounded-lg border border-gray-300 shadow-md p-4 max-xsm:px-2 max-w-lg mx-auto">
             <div className="absolute top-0 -mt-3 w-6 h-6 transform rotate-45 bg-white border border-gray-300"></div>
-            <p className="text-gray-700 text-sm leading-tight max-xxsm:text-center typewriter">
+            <p className="text-gray-700 text-sm leading-tight max-sm:hidden typewriter ">
              Let's transform your business ideas into captivating online experiences 
+             </p>
+             <p className="text-gray-700 h-[36px] text-sm max-xsm:text-[12px] leading-tight max-sm:text-center sm:hidden flex flex-col">
+            <span className="typewriter2 ">Let's transform your business ideas into </span>
+             <span className="typewriter3">captivating online experiences </span>
              </p>
           </div>
         </div>
-
       <div
         className='relative gap-6 bg-[#ed240a38] dark:bg-[#3c2f41] max-xsm:bg-transparent max-xxsm:px-5 max-xsm:px-0 rounded-[20px] p-8'
       >
