@@ -46,7 +46,7 @@ const About:React.FC<Iprop> = ({fontFamily}) => {
                 {
                      qualifications.map((item, idx)=>{
                        return(
-                        <div className="bg-[#ed240a4b] p-4 leading-5 rounded-[20px] min-h-[180px]  flex-col div-center qualific-div " key={idx}>
+                        <div className="bg-[#ed240a4b] p-4 leading-5 rounded-[20px] min-h-[180px]  flex-col div-center qualific-div w-full lg:box-content" key={idx}>
                               <div className="flex gap-5 items-center text-[24px] max-sm:text-xl max-sm:gap-3 max-xxsm:text-base  w-full mb-4 max-sm:mb-2">
                                 <span className={`${item.color}`}>{item.icon}</span>
                                 <h4 className={`font-semibold max-xxsm:font-bold ${fontFamily} uppercase w-full text-start`}>{item.heading}</h4>     
