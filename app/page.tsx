@@ -1,14 +1,30 @@
-import Header from "@/components/Header/Header"
-import MainBody from "@/components/Main.tsx/MainBody"
+import Navbar from "@/components/navbar";
+import Hero from "@/components/hero";
+import AboutMe from "@/components/about";
+import MyTools from "@/components/tools";
+import Projects from "@/components/projects";
+import Experiences from "@/components/experience";
+import Contact from "@/components/contact";
 
-
-const page = () => {
+export default function Home() {
   return (
-    <section className="px-[100px] bg-[#F2F5F9] max-xlg:px-[20px] max-lg:px-[50px] max-sm:px-[20px] max-xsm:px-[10px] dark:bg-[#3c2f41] h-full">
-    <Header/>
-    <MainBody/>
-    </section>
-  )
-}
+    <div className="relative min-h-screen">
+      {/* Background gradients */}
+      <div className="pointer-events-none fixed inset-0">
+        <div className="absolute inset-0 bg-gradient-to-b from-background via-background/90 to-background" />
+        <div className="absolute right-0 top-0 h-[500px] w-[500px] bg-blue-500/10 blur-[100px]" />
+        <div className="absolute bottom-0 left-0 h-[500px] w-[500px] bg-purple-500/10 blur-[100px]" />
+      </div>
 
-export default page
+      <div className="relative z-10">
+        <Navbar />
+        <Hero />
+        <AboutMe />
+        <MyTools />
+        <Projects />
+        <Experiences />
+        <Contact />
+      </div>
+    </div>
+  );
+}
