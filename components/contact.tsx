@@ -53,7 +53,7 @@ export default function Contact() {
               <FaLinkedin size={18} />
             </a>
             <a
-              href="https://twitter.com/shade_codes"
+              href="https://twitter.com/beunknown_"
               target="_blank"
               rel="noopener noreferrer"
               className="w-10 h-10 flex items-center justify-center rounded-full border border-white hover:bg-[#007aff] transition"

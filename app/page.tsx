@@ -5,6 +5,8 @@ import MyTools from "@/components/tools";
 import Projects from "@/components/projects";
 import Experiences from "@/components/experience";
 import Contact from "@/components/contact";
+import NavMenu from "@/components/ui/nav-menu";
+import MainNav from "@/components/MainNav";
 
 export default function Home() {
   return (
@@ -17,7 +19,7 @@ export default function Home() {
       </div>
 
       <div className="relative z-10">
-        <Navbar />
+        <MainNav />
         <Hero />
         <AboutMe />
         <MyTools />

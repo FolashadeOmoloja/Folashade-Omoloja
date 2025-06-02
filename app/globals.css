@@ -71,4 +71,11 @@
   .about-icons {
     @apply transition-transform group-hover:rotate-6 group-hover:scale-125 duration-300 text-[#007aff];
   }
+
+  .menu-item {
+    @apply flex items-center gap-3 hover:text-[#007aff] transition cursor-pointer  text-xs;
+  }
+  .menu-item-icon {
+    @apply text-white about-icons group-hover:text-[#007aff] text-sm;
+  }
 }

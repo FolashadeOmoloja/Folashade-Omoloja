@@ -1,11 +1,18 @@
 import { Pacifico } from "next/font/google";
 import OutlineButton, { MenuButton } from "./ui/button";
+import NavMenu from "./ui/nav-menu";
 const pacifico = Pacifico({
   subsets: ["latin"],
   weight: ["400"],
   variable: "--font-pacifico",
 });
-export default function Navbar() {
+export default function Navbar({
+  isOpen,
+  setIsOpen,
+}: {
+  isOpen: boolean;
+  setIsOpen: (isOpen: boolean) => void;
+}) {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container max-xsm:px-4 flex h-14 max-w-screen-2xl items-center justify-between w-full">
@@ -19,7 +26,7 @@ export default function Navbar() {
             padding="px-4 py-2"
             href="mailto:omolojashade@gmail.com"
           />
-          <MenuButton />
+          <MenuButton onClick={() => setIsOpen(!isOpen)} />
         </div>
       </div>
     </header>
