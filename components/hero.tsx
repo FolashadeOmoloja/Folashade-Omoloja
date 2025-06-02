@@ -67,6 +67,7 @@ export default function Hero() {
           opacitySpan="opacity-0"
           cta="View Projects"
           href="#projects"
+          download={false}
         />
       </div>
     </section>

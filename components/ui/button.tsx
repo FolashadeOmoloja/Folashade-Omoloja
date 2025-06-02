@@ -57,6 +57,7 @@ export const Button = ({
   translateHover = "-translate-x-56 -translate-y-24",
   opacitySpan = "opacity-[3%]",
   href = "#_",
+  download = true,
 }: {
   cta?: string;
   padding?: string;
@@ -64,10 +65,11 @@ export const Button = ({
   translateHover?: string;
   opacitySpan?: string;
   href?: string;
+  download?: boolean;
 }) => (
   <a
     href={href}
-    download
+    download={download}
     className={`relative inline-flex items-center justify-start  ${padding} overflow-hidden font-bold rounded-[10px] group text-sm`}
   >
     <span
