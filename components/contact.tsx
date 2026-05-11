@@ -75,7 +75,7 @@ export default function Contact() {
               translateHover="-translate-x-64 -translate-y-[100px]"
               opacitySpan="opacity-0"
               cta="Download Resume"
-              href="/Folashade_Omoloja_Resume.pdf"
+              href="/FOLASHADE_OMOLOJA_Resume.pdf"
             />
           </div>
         </motion.div>
