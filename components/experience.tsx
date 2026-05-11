@@ -3,6 +3,20 @@ import ExperienceCard from "./experience-cards";
 export default function Experiences() {
   const experiences = [
     {
+  role: "React Native Developer",
+  company: "Game Company",
+  period: "Oct 2025 – Present",
+  description:
+    "Developing interactive mobile gaming experiences with React Native, implementing real-time multiplayer features using WebSockets, building smooth animations, and optimizing app performance across devices.",
+  tech: [
+    "React Native",
+    "TypeScript",
+    "WebSockets",
+    "Reanimated",
+    "Expo",
+  ],
+},
+    {
       role: "Software Developer",
       company: "Plabosce",
       period: "Mar 2025 – May 2025",

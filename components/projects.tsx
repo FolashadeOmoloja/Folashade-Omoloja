@@ -51,6 +51,21 @@ export default function Projects() {
       github: "https://github.com/FolashadeOmoloja/TalentNest-Admin",
       image: ["talent-admin.svg", "talent-admin2.svg"],
     },
+        {
+      title: "Vestoraa",
+      subtitle: "Full Stack Web App",
+      description:
+        "Vestora is a multi-asset investment platform. Intended to grow wealth with a user-friendly interface, secure transactions, and real-time market data.",
+      tech: [
+        "Next.js",
+        "Typescript",
+        "Tailwind",
+        "Framer Motion",
+      ],
+      live: "https://vestoraa.vercel.app/",
+      github: "https://github.com/FolashadeOmoloja/Vestora",
+      image: ["/vestoraa.png", "/vestoraa2.png"],
+    },
     {
       title: "FastKar",
       subtitle: "Full Stack Web App",
@@ -123,7 +138,7 @@ export default function Projects() {
 const ProjectCard = ({ proj }: { proj: Project }) => {
   const [activeImage, setActiveImage] = useState(0);
   return (
-    <div className="bg-[#111827] rounded-xl border border-[#2c2c2c] p-6 shadow-md hover:shadow-[#007aff]/20 transition duration-300 relative">
+    <div className="bg-[#111827] rounded-xl border border-[#2c2c2c] p-6 shadow-md hover:shadow-[#007aff]/20 transition duration-300 relative min-h-[556px]">
       <div className="absolute inset-0 bg-[url('/grid-lines.svg')] bg-no-repeat bg-cover opacity-40 pointer-events-none" />
       <div className="relative mb-4 overflow-hidden">
         <div
